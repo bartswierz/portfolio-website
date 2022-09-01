@@ -10,4 +10,40 @@
 
 html {
   /* Google Fonts */
+  /* font-family: "Passion One", cursive; */
+  font-family: "Roboto", sans-serif;
 }
+
+body {
+  /* font-family: "Fira Sans", sans-serif; */
+  /* font-family: "Passion One", cursive; */
+  /* 1 rem = 10px */
+  font-size: 62.5%;
+  color: white;
+  /* background-color: rgba(32, 32, 111, 0.528); */
+  background-color: rgba(37, 40, 57, 1);
+}
+
+.navbar {
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 2rem;
+}
+
+.nav-link {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  align-text: center;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+/* .navbar; */
