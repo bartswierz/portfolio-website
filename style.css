@@ -12,15 +12,15 @@ html {
   /* Google Fonts */
   /* font-family: "Passion One", cursive; */
   font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
 }
 
 body {
   /* font-family: "Fira Sans", sans-serif; */
   /* font-family: "Passion One", cursive; */
   /* 1 rem = 10px */
-  font-size: 62.5%;
+
   color: white;
-  /* background-color: rgba(32, 32, 111, 0.528); */
   background-color: rgba(37, 40, 57, 1);
 }
 
@@ -34,10 +34,6 @@ body {
 }
 
 .nav-link {
-  /* align-items: center;
-  align-content: center;
-  justify-content: center;
-  align-text: center; */
   text-align: center;
   color: white;
   font-size: 1.4rem;
@@ -47,29 +43,109 @@ body {
   color: white;
 }
 
-/* .navbar; */
-
-.background-color {
-  background-color: red;
+/*************************************************************************/
+/* PROJECT SECTION */
+.project-section {
+  width: 120rem;
+  /* height: auto; */
+  height: 60rem;
+  margin: 0 auto;
+  border: 2px solid #2aa0ec;
 }
 
+.project-image {
+  border: 2px solid #2aa0ec;
+  /* width: 100%;
+  height: 100%; */
+  /* margin-top: 3rem; */
+  margin-top: 3%;
+  width: 100%;
+  /* height: 100%; */
+  /* padding: 2rem; */
+}
+
+.project-content {
+  border: 2px solid #2aa0ec;
+  padding: 2rem;
+}
+
+.project-name {
+  font-size: 4.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2aa0ec;
+}
+
+.project-description {
+  font-size: 2rem;
+}
+
+/* Will hold our buttons */
+.project-btns {
+  /* font-size: 3rem; */
+  text-align: center;
+}
+
+.tech-list {
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-around;
+}
+.list-item {
+  display: inline-block;
+  /* background-color: #9f82218f; */
+  background-color: #ffc400e8;
+  border: 0px solid white;
+
+  padding: 0.4rem 2rem 0.4rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 30px;
+  color: white;
+  margin: 0rem 0.2rem 0rem 0.2rem;
+}
+
+.btn-code {
+  margin-left: 2rem;
+}
+
+.btn-site,
+.btn-code {
+  background-color: #2aa0ec;
+  border: 0px solid white;
+
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  color: white;
+}
+
+.btn-site:hover,
+.btn-code:hover {
+  background-color: white;
+  /* background-color: #2aa0ec; */
+  /* border: 2px solid white; */
+  color: #2aa0ec;
+}
+
+/*************************************************************************/
 /* CONTACT ME SECTION */
 .contact-section {
-  /* background-color: #1d6fa4; */
-  /* background-color: #2aa0ec; */
-  /* margin: 2rem; */
   margin-top: 5rem;
-  padding: 1rem;
-  border-radius: 10px;
-  width: 32rem;
+  padding: 3rem;
+  border-radius: 20px;
+  width: 70rem;
   margin-bottom: 2rem;
-  border: 4px solid #2aa0ec;
+  border: 3px solid #2aa0ec;
 }
 
 .contact-header {
   font-size: 3rem;
   text-align: center;
   justify-content: center;
+  color: #2aa0ec;
+  margin-bottom: 2rem;
 }
 
 .form-control {
@@ -81,12 +157,18 @@ body {
   width: 50%;
   margin-left: 25%;
   margin-top: 1rem;
-  border-radius: 25px;
+  border-radius: 10px;
   font-size: 1.2rem;
   font-weight: 700;
 }
 
 label {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
   margin-bottom: 0.4rem;
+  color: #2aa0ec;
+}
+
+.form-control {
+  background-color: rgb(244, 244, 244);
 }
