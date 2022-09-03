@@ -156,7 +156,7 @@ body {
   width: 120rem;
   height: 80rem;
   margin-bottom: 40rem;
-  border: 2px solid #2aa0ec;
+  /* border: 2px solid #2aa0ec; */
 }
 
 .project-image {
@@ -303,4 +303,27 @@ label {
 
 .form-control {
   background-color: rgb(244, 244, 244);
+}
+
+/*************************************************************************/
+/* FOOTER SECTION */
+
+.footer-section {
+  margin: 0 auto;
+  height: 8rem;
+  display: flex;
+  /* background-color: blueviolet; */
+}
+
+.footer-icon {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 2.2rem;
+  padding: 1rem;
+  /* border: 2px solid white; */
+  border: 2px solid #2aa0ec;
+}
+
+.footer-links {
+  margin: 0 auto;
 }
