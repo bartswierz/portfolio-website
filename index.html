@@ -18,12 +18,13 @@
     crossorigin="anonymous"
     />
 
+    
     <link rel="stylesheet" type="text/css" href="style.css" />
 
     <title>Bartosz Swierzynski</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-dark navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Bart</a>
         <button
@@ -35,7 +36,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon menu-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
@@ -44,8 +45,8 @@
             <a class="nav-link" href="#">About Me</a>
             <a class="nav-link" href="#">Contact</a>
             <a class="nav-link" href="#"><ion-icon name="cloud-download-outline"></ion-icon> Resume</a>
-            <a class="nav-link" href="#"><ion-icon name="logo-linkedin" size="large"></ion-icon></a>
-            <a class="nav-link" href="https://github.com/bartswierz"><ion-icon name="logo-github" size="large"></ion-icon></ion-icon></a>
+            <a class="nav-link" href="#"><ion-icon name="logo-linkedin" class="nav-icon"></ion-icon></a>
+            <a class="nav-link" href="https://github.com/bartswierz"><ion-icon name="logo-github" class="nav-icon"></ion-icon></ion-icon></a>
           </div>
         </div>
       </div>
@@ -102,14 +103,117 @@
                 <!-- OPEN REPO CODE -->
                 <a href="https://github.com/bartswierz/pizza-website" target="_blank"><button class="btn-code"><ion-icon name="code-slash-outline" class="project-icon"></ion-icon>View Code</button></a>
                 <!-- OPEN PROJECT DETAILS - MODAL -->
-                <a href="https://github.com/bartswierz/pizza-website" target="_blank"><button class="btn-code"><ion-icon name="navigate-outline" class="project-icon"></ion-icon>View Details</button></a>
+                <!-- PREVIOUS TEXT -->
+                <!-- <a href="https://github.com/bartswierz/pizza-website" target="_blank"><button class="btn-code"><ion-icon name="navigate-outline" class="project-icon"></ion-icon>View Details</button></a> -->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                  Launch demo modal
+                </button> -->
+                
+                <!-- Button trigger modal -->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  Launch demo modal
+                </button> -->
+
+
+                    <!-- Button trigger modal -->
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal">
+                View Project Details
+              </button>
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  Launch demo modal
+                </button> -->    
+                <!-- Modal -->
+                <!-- Modal -->
+              <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>TEST MODAL</p>
+                      <!-- <p>Why did I build this project?
+                      I built this project for learning experience. I wanted to make a challenging project that would allow me to continously add more features to it as my skills improve. This project allows me to get as close to a real world project as possible. I learned so much after implementing a few of the features into this project and I'm excited to see where it takes me a few months from now. I plan to continously add more features as my developer skills improve.</p>
+                      <p>CHALLENGES?
+                      1. Implementing a modal window for current order. This became our first real challenge during this project as I was still getting familiar with utilizing bootstrap for components. It took a bit of time to think about how I wanted to add the order list and a second modal window to display the order submission. Luckily, the bootstrap documentation is very thorough and easy to read, I was able to come up with a neat layout.
+                      </p>
+                      <p>
+                      Future Additions:
+                      -Allow user to remove item from order.
+                      -Discount for certain items based on current day of the week.
+                      -Account registration</p> -->
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
               </div>
             </div>
           </div>
         </div>
+
+        
+
+      
+      <!-- Modal -->
+      <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Project Overview</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Why did I build this project?
+              his project allows me to get as close to a real world project as possible. I learned so much after implementing a few of the features into this project and I'm excited to see where it takes me a few months from now. I plan to continously add more features as my developer skills improve.</p>  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
       </div>
 
-    <!-- PROJECT #3 -->
+    <!-- PROJECT 1 - MODAL -->
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+      Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            test
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- END OF PROJECT 1 -->
+
+
+    <!-- PROJECT #2 -->
     <div class="project-section">
       <div class="container-fluid">
           <!-- Image -->
@@ -142,7 +246,8 @@
         </div>
       </div>
 
-    <!-- PROJECT #1 -->
+    <!-- END OF PROJECT 2 -->
+    <!-- PROJECT #3 -->
     <div class="project-section">
       <div class="container-fluid">
           <!-- Image -->
@@ -201,6 +306,28 @@
       </form>
     </div>
 
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <!-- FOOTER SECTION -->
     <div class="footer-section">
       <div class="footer-links">
@@ -210,12 +337,15 @@
       </div>
     </div>
 
+  
+   
     <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>  -->
 
     <!-- Ion Icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
