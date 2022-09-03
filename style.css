@@ -2,6 +2,16 @@
   transition: 5500ms;
 } */
 
+/* COLORS
+BACKGROUND COLOR
+rgba(37, 40, 57, 1);
+
+BUTTONS
+#2aa0ec
+HOVER/ACTIVE
+#2a9eeccd;
+ */
+
 * {
   padding: 0;
   margin: 0;
@@ -33,15 +43,38 @@ body {
   font-size: 4.4rem;
 }
 
+.navbar-brand:link,
+.navbar-brand:visited {
+  color: rgba(255, 255, 255);
+  text-decoration: solid;
+}
+
+.navbar-brand:hover,
+.navbar-brand:active {
+  color: rgba(255, 255, 255, 0.661);
+  text-decoration: solid;
+}
+
 /* Moves nav-items to the right */
 .navbar-collapse {
   flex-grow: 0;
 }
-
+/* LVHA */
 .nav-link {
   text-align: center;
   color: white;
   font-size: 2.8rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: white;
+  text-decoration: solid;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: rgba(255, 255, 255, 0.661);
+  text-decoration: solid;
 }
 
 .navbar-toggler-icon {
@@ -76,17 +109,18 @@ body {
 }
 
 .intro-btn {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  border-radius: 35px;
   padding: 1rem 2rem 1rem 2rem;
   color: white;
-  background-color: #2aa0ec;
+  background-color: rgba(37, 40, 57, 1);
+  border: 2px solid white;
 }
 
 .intro-btn:hover,
 .intro-btn:active {
   background-color: #2a9eeccd;
+  /* border: 2px solid #2a9eeccd; */
 }
 /* Arrow */
 .intro-icon {
@@ -103,6 +137,10 @@ body {
   margin-left: 1rem;
 }
 
+.highlight {
+  color: #2aa0ec;
+  font-weight: 500;
+}
 .intro-btns {
   margin-top: 3rem;
 }
@@ -113,6 +151,7 @@ body {
   /* height: auto; */
   height: 60rem;
   margin: 0 auto;
+  margin-bottom: 20rem;
   border: 2px solid #2aa0ec;
 }
 
