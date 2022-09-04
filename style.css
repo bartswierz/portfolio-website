@@ -37,9 +37,24 @@ body {
   /* background: linear-gradient(-45deg, #4309ae, #5515cc, #641beb, #23a6d5); */
   /* background: linear-gradient(-45deg, #4309ae, #5515cc, #0072fe, #0072fe); */
   /* background: linear-gradient(-45deg, #4495f8, #2781f0, #0072fe, #0062d9); */
-  background: linear-gradient(-45deg, #2781f0, #002e8be3, #002e8be3, #001030e3);
+  /* background: linear-gradient(-45deg, #2781f0, #002e8be3, #0145cce3, #001030e3);
+  background: linear-gradient(-45deg, #2781f0, #002e8be3, #0145cce3, #001030e3); */
+  background: linear-gradient(-45deg, #2781f0, #004ef6ee, #003e81, #001030e3);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /* NAVIGATION SECTION */
 .navbar {
   color: white;
@@ -114,7 +129,7 @@ body {
   padding: 7rem 3rem 3rem 3rem;
   margin-top: 9rem;
   width: 80rem;
-  height: 60rem;
+  height: 80rem;
 }
 
 .intro-heading {
@@ -262,17 +277,16 @@ body {
 
 .btn-site,
 .btn-code {
-  /* background-color: rgba(37, 40, 57, 1); */
-  /* border: 0px solid white; */
-  background-color: #2aa0ec;
-  border: 0px solid #2aa0ec;
-
   padding: 1rem 2rem 1rem 2rem;
   font-size: 1.6rem;
   font-weight: 600;
-  /* border-radius: 30px; */
   border: 2px solid white;
   color: white;
+  background-color: #2aa0ec;
+  border: 0px solid #2aa0ec;
+  /* border-radius: 30px; */
+  /* background-color: rgba(37, 40, 57, 1); */
+  /* border: 0px solid white; */
 }
 
 .btn-site:hover,
@@ -289,6 +303,34 @@ body {
   margin-right: 0.5rem;
 }
 
+/* PROJECT DESCRIPTION - MODAL BODY */
+.modal-title {
+  font-size: 4rem;
+}
+
+.modal-body {
+  font-size: 2rem;
+}
+
+.modal-topic {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.modal-explanation {
+  font-size: 2rem;
+}
+.modal-divider {
+  border-bottom: 1px solid rgba(49, 49, 49, 0.458);
+  margin-bottom: 1rem;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: inside;
+}
 /*************************************************************************/
 /* CONTACT ME SECTION */
 .contact-section {
@@ -353,8 +395,8 @@ label {
   display: inline-block;
   font-size: 2.2rem;
   padding: 1rem;
-  /* border: 2px solid white; */
-  border: 2px solid #2aa0ec;
+  border: 2px solid white;
+  /* border: 2px solid #2aa0ec; */
 }
 
 .footer-links {
