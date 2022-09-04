@@ -8,8 +8,10 @@ rgba(37, 40, 57, 1);
 
 BUTTONS
 #2aa0ec
+#e3a812;
 HOVER/ACTIVE
 #2a9eeccd;
+#e3a812;
  */
 
 * {
@@ -19,17 +21,16 @@ HOVER/ACTIVE
 }
 
 html {
-  /* Google Fonts */
-  /* font-family: "Passion One", cursive; */
-  font-family: "Roboto", sans-serif;
   font-size: 62.5%;
 }
 
 body {
-  /* font-family: "Fira Sans", sans-serif; */
-  /* font-family: "Passion One", cursive; */
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Roboto Slab", sans-serif;
+  /* font-family: "League Spartan", sans-serif; */
   /* 1 rem = 10px */
   color: white;
+
   /* background-color: rgba(37, 40, 57, 1); */
   /* background: linear-gradient(rgb(59 38 211), rgb(0 0 0));
   background: linear-gradient(rgba(37, 40, 57, 1), rgb(0 0 0)); */
@@ -39,9 +40,9 @@ body {
   /* background: linear-gradient(-45deg, #4495f8, #2781f0, #0072fe, #0062d9); */
   /* background: linear-gradient(-45deg, #2781f0, #002e8be3, #0145cce3, #001030e3); */
   /* background: linear-gradient(-45deg, #2781f0, #002e8be3, #0145cce3, #001030e3); */
-  background: linear-gradient(-45deg, #2781f0, #002e8be3, #0145cce3, #001030e3);
   /* background: linear-gradient(-45deg, #ff1900, #ffffff, #ffa201, #eb9602); */
   /* background: linear-gradient(-45deg, #2781f0, #004ef6ee, #003e81, #001030e3); */
+  background: linear-gradient(-45deg, #2781f0, #002e8be3, #0145cce3, #001030e3);
   background-size: 400% 400%;
   animation: gradient 3s ease infinite;
   /* animation: gradient 15s ease infinite; */
@@ -137,6 +138,7 @@ body {
 
 .intro-heading {
   font-size: 5rem;
+  font-weight: 700;
 }
 
 .intro-description {
@@ -165,8 +167,11 @@ body {
 
 .intro-btn:hover,
 .intro-btn:active {
-  background-color: #2a9eeccd;
-  /* border: 2px solid #2a9eeccd; */
+  /* DARK THEME */
+  background-color: #e3a812;
+
+  /* LIGHT THEME */
+  /* background-color: #2a9eeccd; */
 }
 /* Arrow */
 .intro-icon {
@@ -189,8 +194,14 @@ body {
 }
 
 .highlight {
-  color: #2aa0ec;
   font-weight: 500;
+
+  /* DARK THEME */
+  /* color: #e3a812; */
+  color: #ffb700;
+
+  /* LIGHT THEME */
+  /* color: #2aa0ec; */
 }
 .intro-btns {
   margin-top: 3rem;
@@ -210,8 +221,8 @@ body {
   height: 70%;
   margin: 0 auto;
   padding: 0;
-  /* border: 1px solid #2aa0ec; */
   border-bottom: 1px solid rgba(153, 153, 153, 0.59);
+  /* border: 1px solid #2aa0ec; */
 }
 
 /* Project Text */
@@ -220,7 +231,15 @@ body {
   color: black;
   padding: 2rem;
   width: 80%;
-  background-color: white;
+
+  /* DARK THEME */
+  background-color: rgba(37, 40, 57, 1);
+  border: 2px solid white;
+
+  /* LIGHT THEME */
+  /* background-color: white; */
+
+  /* FOR LAYOUT PURPOSES */
   /* border: 2px solid #2aa0ec; */
 }
 
@@ -228,28 +247,42 @@ body {
   font-size: 4.2rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: #333;
   line-height: 1.8rem;
+  /* DARK THEME */
+  color: white;
+
+  /* LIGHT THEME */
+  /* color: #333; */
 }
 
 .project-subheading {
   font-size: 1.8rem;
   margin-bottom: 2rem;
   text-align: center;
-  /* color: #2aa0ec; */
-  color: #888;
   padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(153, 153, 153, 0.59);
+
+  /* DARK THEME */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.93);
+  color: rgb(202, 202, 202);
+
+  /* LIGHT THEME */
+  /* border-bottom: 1px solid rgba(153, 153, 153, 0.59);
+  color: #888; */
+
+  /* FOR LAYOUT PURPOSES */
+  /* color: #2aa0ec; */
 }
 
 .project-description {
   font-size: 2rem;
   line-height: 3rem;
+
+  /* DARK THEME */
+  color: white;
 }
 
 /* Will hold our buttons */
 .project-btns {
-  /* font-size: 3rem; */
   text-align: center;
 }
 
@@ -257,8 +290,9 @@ body {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  color: rgba(4, 40, 57, 1);
+  color: rgba(37, 40, 57, 1);
 }
+
 .list-item {
   display: inline-block;
 
@@ -275,7 +309,6 @@ body {
 
 .btn-code {
   margin-left: 2rem;
-  background-color: #2aa0ec;
 }
 
 .btn-site,
@@ -285,19 +318,23 @@ body {
   font-weight: 600;
   border: 2px solid white;
   color: white;
-  background-color: #2aa0ec;
-  border: 0px solid #2aa0ec;
-  /* border-radius: 30px; */
-  /* background-color: rgba(37, 40, 57, 1); */
-  /* border: 0px solid white; */
+
+  /* DARK THEME */
+  background-color: rgba(37, 40, 57, 1);
+  border: 2px solid white;
+
+  /* LIGHT THEME */
+  /* background-color: #2aa0ec;
+  border: 0px solid #2aa0ec; */
 }
 
 .btn-site:hover,
 .btn-code:hover {
-  background-color: #2794dd;
-  /* background-color: white; */
-  /* border: 2px solid white; */
-  /* color: #2aa0ec; */
+  /* DARK THEME */
+  background-color: #e3a812;
+
+  /* LIGHT THEME */
+  /* background-color: #2794dd; */
 }
 
 .project-icon {
@@ -362,6 +399,7 @@ body {
 
 .form-btn {
   background-color: #2aa0ec;
+  /* background-color: #e3a812; */
   width: 50%;
   margin-left: 25%;
   margin-top: 1rem;
