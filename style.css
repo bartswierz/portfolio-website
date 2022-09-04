@@ -220,9 +220,16 @@ body {
   width: 80%;
   height: 70%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0rem;
   border-bottom: 1px solid rgba(153, 153, 153, 0.59);
   /* border: 1px solid #2aa0ec; */
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.project-image:hover {
+  /* transform: rotate(-360deg); */
+  /* transition: 1000ms; */
 }
 
 /* Project Text */
@@ -231,6 +238,7 @@ body {
   color: black;
   padding: 2rem;
   width: 80%;
+  border-radius: 10px;
 
   /* DARK THEME */
   background-color: rgba(37, 40, 57, 1);
