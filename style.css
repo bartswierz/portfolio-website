@@ -29,13 +29,15 @@ body {
   /* font-family: "Fira Sans", sans-serif; */
   /* font-family: "Passion One", cursive; */
   /* 1 rem = 10px */
-
   color: white;
   /* background-color: rgba(37, 40, 57, 1); */
-  background-color: rgba(37, 40, 57, 1);
-  /* background: linear-gradient(#e66465, #9198e5); */
-  background: linear-gradient(rgb(59 38 211), rgb(0 0 0));
-  background: linear-gradient(rgba(37, 40, 57, 1), rgb(0 0 0));
+  /* background: linear-gradient(rgb(59 38 211), rgb(0 0 0));
+  background: linear-gradient(rgba(37, 40, 57, 1), rgb(0 0 0)); */
+  /* background: linear-gradient(-45deg, #1382aa, #23a6d5, #1c83a9, #23d5cf); */
+  /* background: linear-gradient(-45deg, #4309ae, #5515cc, #641beb, #23a6d5); */
+  /* background: linear-gradient(-45deg, #4309ae, #5515cc, #0072fe, #0072fe); */
+  /* background: linear-gradient(-45deg, #4495f8, #2781f0, #0072fe, #0062d9); */
+  background: linear-gradient(-45deg, #2781f0, #002e8be3, #002e8be3, #001030e3);
 }
 
 /* NAVIGATION SECTION */
@@ -294,16 +296,19 @@ body {
   padding: 3rem;
   border-radius: 20px;
   width: 70rem;
-  margin-bottom: 2rem;
-  border: 3px solid #2aa0ec;
+  margin-bottom: 12rem;
+  background-color: rgba(37, 40, 57, 1);
+  border: 3px solid white;
+  /* border: 3px solid #2aa0ec; */
 }
 
 .contact-header {
   font-size: 3rem;
   text-align: center;
   justify-content: center;
-  color: #2aa0ec;
   margin-bottom: 2rem;
+  /* color: #2aa0ec; */
+  color: white;
 }
 
 .form-control {
@@ -324,7 +329,8 @@ label {
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 0.4rem;
-  color: #2aa0ec;
+  /* color: #2aa0ec; */
+  color: white;
 }
 
 .form-control {
@@ -338,6 +344,7 @@ label {
   margin: 0 auto;
   height: 8rem;
   display: flex;
+  background-color: rgba(37, 40, 57, 1);
   /* background-color: blueviolet; */
 }
 
