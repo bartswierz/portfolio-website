@@ -42,9 +42,12 @@ body {
   /* background: linear-gradient(-45deg, #2781f0, #002e8be3, #0145cce3, #001030e3); */
   /* background: linear-gradient(-45deg, #ff1900, #ffffff, #ffa201, #eb9602); */
   /* background: linear-gradient(-45deg, #2781f0, #004ef6ee, #003e81, #001030e3); */
-  background: linear-gradient(-45deg, #2781f0, #002e8be3, #0145cce3, #001030e3);
+  /* background: linear-gradient(-45deg, #2781f0, #002e8be3, #0145cce3, #001030e3); */
+  /* #000428 → #004e92 */
+  background: linear-gradient(-45deg, #eb9602, #000428, #004e92);
+  /* background: linear-gradient(-45deg, #eb9602, #000428, #004e92); */
   background-size: 400% 400%;
-  animation: gradient 3s ease infinite;
+  animation: gradient 15s ease infinite;
   /* animation: gradient 15s ease infinite; */
 }
 
@@ -83,7 +86,8 @@ body {
 
 .navbar-brand:hover,
 .navbar-brand:active {
-  color: rgba(255, 255, 255, 0.661);
+  /* color: rgba(255, 255, 255, 0.661); */
+  color: #e3a812;
   text-decoration: solid;
 }
 
@@ -111,12 +115,9 @@ body {
 }
 .nav-link:hover,
 .nav-link:active {
-  color: rgba(255, 255, 255, 0.661);
+  /* color: rgba(255, 255, 255, 0.661); */
+  color: #e3a812;
   text-decoration: solid;
-}
-
-.navbar-toggler-icon {
-  color: white;
 }
 
 .nav-icon {
@@ -208,6 +209,12 @@ body {
 }
 /*************************************************************************/
 /* PROJECT SECTION */
+.section-header {
+  font-size: 5rem;
+  color: #ffb700;
+  margin-left: 3rem;
+}
+
 .project-section {
   margin: 0 auto;
   width: 120rem;
@@ -464,7 +471,12 @@ label {
   font-size: 2.2rem;
   padding: 1rem;
   border: 2px solid white;
+  color: white;
   /* border: 2px solid #2aa0ec; */
+}
+
+.footer-icon:hover {
+  color: #ffb700;
 }
 
 .footer-links {
