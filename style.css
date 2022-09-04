@@ -344,24 +344,43 @@ body {
 }
 
 /* PROJECT DESCRIPTION - MODAL BODY */
+.modal-content {
+  /* DARK THEME */
+  background-color: rgba(37, 40, 57, 1);
+}
+
 .modal-title {
   font-size: 4rem;
+
+  /* DARK THEME */
+  /* color: white; */
+  color: #e3a812;
 }
 
 .modal-body {
   font-size: 2rem;
+
+  /* DARK THEME */
+  color: white;
 }
 
 .modal-topic {
   font-size: 3rem;
   font-weight: 600;
+
+  /* DARK THEME */
+  color: #e3a812;
 }
 
 .modal-explanation {
   font-size: 2rem;
 }
 .modal-divider {
-  border-bottom: 1px solid rgba(49, 49, 49, 0.458);
+  /* DARK THEME */
+  border-bottom: 1px solid white;
+
+  /* LIGHT THEME */
+  /* border-bottom: 1px solid rgba(49, 49, 49, 0.458); */
   margin-bottom: 1rem;
 }
 
