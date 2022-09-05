@@ -131,9 +131,11 @@ body {
 /* INTRODUCTION SECTION */
 .intro-section {
   margin: 0 auto;
-  padding: 7rem 3rem 3rem 3rem;
+  padding: 10vw 3rem 3rem 3rem;
   margin-top: 9rem;
 
+  width: 80vw;
+  height: 90vh;
   /* display: grid; */
   /* grid-template-columns: 4fr 1fr; */
   /* text-align: center; */
@@ -193,6 +195,19 @@ body {
   transition: 300ms;
 }
 
+.intro-link-icons {
+  vertical-align: middle;
+  font-size: 3rem;
+  color: #e3a812;
+  margin-right: 0.5rem;
+}
+
+.intro-link-icons:hover,
+.intro-link-icons:active {
+  color: #ffb700;
+  /* border: 2px solid #ffb700; */
+}
+
 /* Adds a small gap between buttons */
 .space-left {
   margin-left: 1rem;
@@ -216,10 +231,28 @@ body {
   margin-top: 3rem;
 }
 /*************************************************************************/
+/* ABOUT SECTION */
+.about-section {
+}
+
+.about-header {
+  padding-left: 3rem;
+  font-size: 4rem;
+  /* color: #ffb700; */
+  color: white;
+}
+
+.about-description {
+  font-size: 2.8rem;
+  margin-top: 3rem;
+  padding-left: 3rem;
+}
+/*************************************************************************/
 /* PROJECT SECTION */
 .section-header {
-  font-size: 5rem;
-  color: #ffb700;
+  font-size: 4rem;
+  /* color: #ffb700; */
+  color: white;
   margin-left: 3rem;
 }
 
@@ -524,4 +557,29 @@ label {
 
 .footer-links {
   margin: 0 auto;
+}
+
+/* MEDIA QUERIES */
+/* 0-1600px - WIDE DESKTOP SCREENS*/
+@media (max-width: 100em) {
+  .intro-heading {
+    font-size: 8rem;
+  }
+
+  .intro-subheading {
+    font-size: 5rem;
+  }
+
+  .intro-subheading-2 {
+    font-size: 3.6rem;
+  }
+
+  .intro-link-icons {
+    margin: 1rem 0rem 1rem 0rem;
+    font-size: 4rem;
+  }
+
+  .intro-btn {
+    font-size: 2rem;
+  }
 }
