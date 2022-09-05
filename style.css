@@ -235,6 +235,63 @@ body {
   display: flex;
   column-gap: 0.5rem;
 }
+
+/* TESTING FADE IN */
+.fade-in {
+  /* COMPLETES FADE IN 5 SECS */
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+/* WILL BE USED TO FADE IN OUR INTRO AND ABOUT SECTION */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*************************************************************************/
 /* ABOUT SECTION */
 .about-section {
@@ -282,12 +339,12 @@ body {
   height: 80%; */
   width: 50vw;
   height: 45vh;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0rem;
-  border-bottom: 1px solid rgba(153, 153, 153, 0.59);
-  /* border: 1px solid #2aa0ec; */
   border-radius: 10px;
   margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.59);
 }
 
 .project-image:hover {
@@ -301,6 +358,7 @@ body {
   color: black;
   padding: 2rem;
   width: 80%;
+  max-width: 120rem;
   border-radius: 10px;
 
   /* DARK THEME */
@@ -573,8 +631,9 @@ label {
 
 /***********************************************************/
 /* MEDIA QUERIES */
-/* 0-2000px - WIDE DESKTOP SCREENS*/
+/* 0-2000px - ULTRA WIDE DESKTOP SCREENS*/
 @media (max-width: 100em) {
+  /* INTRO SECTION */
   .intro-heading {
     font-size: 8rem;
   }
@@ -595,13 +654,44 @@ label {
   .intro-btn {
     font-size: 2rem;
   }
+
+  /* PROJECT SECTION */
+  .project-image {
+    width: 60vw;
+    height: 35vh;
+  }
+
+  .project-content {
+    width: 100%;
+  }
+
+  .list-item {
+    font-size: 1.6rem;
+  }
+
+  .project-description {
+    font-size: 3.2rem;
+    line-height: 5rem;
+  }
+
+  .btn-site,
+  .btn-code,
+  .modal-close {
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 2.6rem;
+    font-weight: 600;
+    border: 2px solid white;
+  }
 }
 
 /* 0-1760px - WIDE DESKTOP SCREENS*/
 @media (max-width: 88em) {
+  /* INTRO SECTION */
   .intro-heading {
     font-size: 6rem;
   }
+
+  /* PROJECT SECTION */
 }
 
 /* 0-1260px */
