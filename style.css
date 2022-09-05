@@ -230,9 +230,16 @@ body {
 .intro-btns {
   margin-top: 3rem;
 }
+
+.flex-items {
+  display: flex;
+  column-gap: 0.5rem;
+}
 /*************************************************************************/
 /* ABOUT SECTION */
 .about-section {
+  width: 80vw;
+  height: 50vh;
 }
 
 .about-header {
@@ -244,9 +251,12 @@ body {
 
 .about-description {
   font-size: 2.8rem;
-  margin-top: 3rem;
-  padding-left: 3rem;
+  margin-top: 5rem;
+  padding-left: 6rem;
+  width: 90vw;
+  line-height: 5rem;
 }
+
 /*************************************************************************/
 /* PROJECT SECTION */
 .section-header {
