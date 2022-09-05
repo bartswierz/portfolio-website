@@ -43,12 +43,11 @@ body {
   /* background: linear-gradient(-45deg, #ff1900, #ffffff, #ffa201, #eb9602); */
   /* background: linear-gradient(-45deg, #2781f0, #004ef6ee, #003e81, #001030e3); */
   /* background: linear-gradient(-45deg, #2781f0, #002e8be3, #0145cce3, #001030e3); */
-  /* #000428 → #004e92 */
-  background: linear-gradient(-45deg, #eb9602, #000428, #004e92);
   /* background: linear-gradient(-45deg, #eb9602, #000428, #004e92); */
+  background: linear-gradient(-45deg, #eb9602, #eb9602, #000428, #000428, #004e92);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  /* animation: gradient 15s ease infinite; */
+  /* animation: gradient 3s ease infinite; */
 }
 
 @keyframes gradient {
@@ -166,11 +165,12 @@ body {
   border: 2px solid white;
 }
 
+/* intro-btn -> section-link->ion-icon */
+
 .intro-btn:hover,
 .intro-btn:active {
   /* DARK THEME */
   background-color: #e3a812;
-
   /* LIGHT THEME */
   /* background-color: #2a9eeccd; */
 }
@@ -291,7 +291,7 @@ body {
 .project-description {
   font-size: 2rem;
   line-height: 3rem;
-
+  margin-top: 2rem;
   /* DARK THEME */
   color: white;
 }
@@ -299,6 +299,8 @@ body {
 /* Will hold our buttons */
 .project-btns {
   text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
 }
 
 .tech-list {
@@ -327,7 +329,8 @@ body {
 }
 
 .btn-site,
-.btn-code {
+.btn-code,
+.modal-close {
   padding: 1rem 2rem 1rem 2rem;
   font-size: 1.6rem;
   font-weight: 600;
@@ -343,8 +346,13 @@ body {
   border: 0px solid #2aa0ec; */
 }
 
+.modal-close {
+  margin: 1rem 1rem 1rem 1rem;
+}
+
 .btn-site:hover,
-.btn-code:hover {
+.btn-code:hover,
+.modal-close:hover {
   /* DARK THEME */
   background-color: #e3a812;
 
@@ -403,7 +411,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  list-style: inside;
+  list-style: none;
+  /* list-style: inside; */
+}
+
+.features-icon {
+  color: #e3a812;
+  margin-right: 0.5rem;
 }
 /*************************************************************************/
 /* CONTACT ME SECTION */
@@ -488,8 +502,10 @@ label {
   /* border: 2px solid #2aa0ec; */
 }
 
-.footer-icon:hover {
+.footer-icon:hover,
+.footer-icon:active {
   color: #ffb700;
+  border: 2px solid #ffb700;
 }
 
 .footer-links {
