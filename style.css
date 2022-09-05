@@ -432,14 +432,27 @@ body {
 }
 
 .form-btn {
-  background-color: #2aa0ec;
-  /* background-color: #e3a812; */
+  /* background-color: #2aa0ec; */
   width: 50%;
   margin-left: 25%;
   margin-top: 1rem;
   border-radius: 10px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
+  background-color: #e3a812;
+  border: 1px solid #e3a812;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.form-btn:hover,
+.form-btn:active {
+  background-color: #c59210;
+}
+
+.form-btn:link,
+.form-btn:visited {
+  background-color: #c59210;
+  border: 1px solid #e3a812;
 }
 
 label {
