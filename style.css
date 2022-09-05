@@ -130,10 +130,18 @@ body {
 /*************************************************************************/
 /* INTRODUCTION SECTION */
 .intro-section {
+  margin: 0 auto;
   padding: 7rem 3rem 3rem 3rem;
   margin-top: 9rem;
+
+  /* display: grid; */
+  /* grid-template-columns: 4fr 1fr; */
+  /* text-align: center; */
+  /* width: 100vw; */
+  /* min-width: 100vw; */
+  /*   
   width: 80rem;
-  height: 80rem;
+  height: 80rem; */
 }
 
 .intro-heading {
@@ -217,8 +225,11 @@ body {
 
 .project-section {
   margin: 0 auto;
-  width: 120rem;
-  height: 80rem;
+  /* width: 120rem;
+  height: 80rem; */
+  width: 60%;
+  height: 60%;
+
   margin-bottom: 40rem;
   /* border: 2px solid #2aa0ec; */
 }
@@ -443,6 +454,9 @@ body {
 
 .form-control {
   margin-bottom: 1rem;
+  background-color: #000428;
+  color: #333;
+  border-bottom: 3px solid #e3a812;
 }
 
 .form-btn {
