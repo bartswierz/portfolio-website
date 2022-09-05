@@ -239,7 +239,7 @@ body {
 /* ABOUT SECTION */
 .about-section {
   width: 80vw;
-  height: 50vh;
+  height: 60vh;
 }
 
 .about-header {
@@ -278,8 +278,10 @@ body {
 }
 
 .project-image {
-  width: 80%;
-  height: 70%;
+  /* width: 80%;
+  height: 80%; */
+  width: 50vw;
+  height: 45vh;
   margin: 0 auto;
   padding: 0rem;
   border-bottom: 1px solid rgba(153, 153, 153, 0.59);
@@ -591,5 +593,159 @@ label {
 
   .intro-btn {
     font-size: 2rem;
+  }
+}
+
+/* 0-1408px - WIDE DESKTOP SCREENS*/
+@media (max-width: 88em) {
+  .intro-heading {
+    font-size: 6rem;
+  }
+}
+
+/* 0-1008px */
+@media (max-width: 63em) {
+  .intro-heading {
+    font-size: 5rem;
+  }
+
+  .intro-subheading {
+    font-size: 3.6rem;
+  }
+
+  .intro-subheading-2 {
+    font-size: 2.8rem;
+  }
+
+  .intro-link-icons {
+    margin: 1rem 0rem 1rem 0rem;
+    font-size: 3rem;
+  }
+
+  .intro-btn {
+    font-size: 2rem;
+  }
+
+  /* ABOUT SECTION */
+  .about-description {
+    font-size: 2.4rem;
+  }
+}
+
+/* 0-832px */
+@media (max-width: 46em) {
+  .intro-heading {
+    font-size: 5rem;
+  }
+
+  /* .intro-subheading {
+    font-size: 3.6rem;
+  }
+
+  .intro-subheading-2 {
+    font-size: 2.8rem;
+  }
+
+  .intro-link-icons {
+    margin: 1rem 0rem 1rem 0rem;
+    font-size: 3rem;
+  }
+
+  .intro-btn {
+    font-size: 2rem;
+  } */
+
+  /* ABOUT SECTION */
+  /* .about-description {
+    font-size: 2.4rem;
+  } */
+}
+
+/* 0-680px */
+@media (max-width: 34em) {
+  .intro-section {
+    padding: 3rem 0rem 0rem 0rem;
+  }
+
+  .intro-heading {
+    font-size: 4.6rem;
+  }
+
+  .intro-subheading {
+    font-size: 3.2rem;
+  }
+
+  .intro-subheading-2 {
+    font-size: 2.4rem;
+  }
+
+  .intro-link-icons {
+    margin: 1rem 0rem 1rem 0rem;
+    font-size: 2.2rem;
+  }
+
+  .intro-btn {
+    font-size: 1.2rem;
+  }
+}
+
+/* 0-560px */
+@media (max-width: 28em) {
+  .intro-btns {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.6rem;
+  }
+
+  .intro-btn {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+
+  .intro-link-icons {
+    font-size: 3rem;
+  }
+
+  .flex-items {
+    gap: 2rem;
+  }
+}
+
+/* 0-520px */
+@media (max-width: 26em) {
+  /* .intro-section {
+    padding: 3rem 0rem 0rem 0rem;
+  } */
+
+  .intro-heading {
+    font-size: 3.6rem;
+  }
+
+  .intro-subheading {
+    font-size: 2.6rem;
+  }
+
+  .intro-subheading-2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* 0-360px */
+@media (max-width: 18em) {
+  .intro-subheading {
+    font-size: 2rem;
+  }
+
+  .intro-heading {
+    font-size: 3.2rem;
+  }
+
+  .intro-subheading-2 {
+    font-size: 1.6rem;
+  }
+
+  .intro-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem;
   }
 }
