@@ -64,7 +64,8 @@ body {
 /* NAVIGATION SECTION */
 .navbar {
   color: white;
-  background-color: rgba(37, 40, 57, 0.9);
+  background-color: rgba(37, 40, 57, 1);
+  /* background-color: rgba(37, 40, 57, 0.9); */
   box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
@@ -73,13 +74,15 @@ body {
 }
 
 .navbar-brand {
-  color: white;
+  /* color: white; */
+  color: #e3a812;
   font-size: 4.4rem;
 }
 
 .navbar-brand:link,
 .navbar-brand:visited {
-  color: rgba(255, 255, 255);
+  /* color: rgba(255, 255, 255); */
+  color: #e3a812;
   text-decoration: solid;
 }
 
@@ -95,16 +98,22 @@ body {
   flex-grow: 0;
 }
 
+.menu-divider {
+  border-bottom: 2px solid #e3a812;
+}
+
 .navbar-nav {
   column-gap: 3rem;
   margin-right: 2rem;
+  border-bottom: 2px solid #e3a812;
+  border-top: 2px solid #e3a812;
 }
 
-/* LVHA */
 .nav-link {
   text-align: center;
   color: white;
   font-size: 2.4rem;
+  /* border-top: 2px solid #e3a812; */
 }
 
 .nav-link:link,
