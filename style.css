@@ -161,9 +161,6 @@ body {
   color: white;
   text-decoration: none;
   transition: 300ms;
-
-  /* padding: 0rem 5rem 0rem 5rem; */
-  /* padding: auto auto; */
 }
 
 .section-link:hover {
@@ -178,6 +175,11 @@ body {
   background-color: rgba(37, 40, 57, 1);
   border: 2px solid white;
 }
+
+/* .intro-btn a {
+  width: 100%;
+  height: 100%;
+} */
 
 /* intro-btn -> section-link->ion-icon */
 
