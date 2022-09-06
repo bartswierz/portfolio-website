@@ -808,6 +808,10 @@ label {
     font-size: 2.6rem;
     margin-right: 1rem;
   }
+
+  .project-image {
+    height: 70vh;
+  }
 }
 
 /* 0-1260px */
@@ -847,6 +851,10 @@ label {
   .btn-site {
     width: 34%;
   }
+
+  .project-image {
+    height: 75vh;
+  }
 }
 
 /* 0-920px */
@@ -881,7 +889,7 @@ label {
 
   /* PROJECT SECTION */
   .project-image {
-    height: 30vh;
+    height: 35vh;
   }
 }
 
@@ -908,6 +916,11 @@ label {
 
   .contact-section {
     width: 90vw;
+  }
+
+  .project-image {
+    /* height: 25vh; */
+    height: 40vh;
   }
 }
 
@@ -992,7 +1005,8 @@ label {
 
   /* PROJECT SECTION */
   .project-image {
-    height: 20vh;
+    height: 40vh;
+    /* height: 25vh; */
   }
 }
 
@@ -1079,6 +1093,10 @@ label {
   .list-item {
     font-size: 0.8rem;
   }
+
+  .project-image {
+    height: 30vh;
+  }
 }
 
 /* 0-360px */
@@ -1119,6 +1137,6 @@ label {
 
   /* PROJECT SECTION */
   .project-image {
-    height: 15vh;
+    height: 30vh;
   }
 }
