@@ -837,6 +837,12 @@ label {
     font-size: 5rem;
   }
 
+  /* ABOUT SECTION */
+  .about-description {
+    font-size: 2rem;
+  }
+
+  /* PROJECT SECTION */
   .btn-code,
   .btn-site {
     width: 47%;
@@ -934,10 +940,7 @@ label {
   .btn-code,
   .btn-site,
   .btn-description {
-    /* width: 100%; */
-    /* width: 80%;
-    font-size: 2rem; */
-    width: 55%;
+    width: 65%;
     font-size: 1.3rem;
   }
 
@@ -988,6 +991,12 @@ label {
     gap: 2rem;
   }
 
+  /* ABOUT SECTION */
+  .about-description {
+    font-size: 1.8rem;
+    line-height: 4.2rem;
+  }
+
   /* PROJECT SECTION */
   .project-heading {
     font-size: 3rem;
@@ -1000,6 +1009,7 @@ label {
 
 /* 0-520px */
 @media (max-width: 26em) {
+  /* INTRO SECTION */
   .intro-heading {
     font-size: 3.6rem;
   }
@@ -1012,12 +1022,33 @@ label {
     font-size: 1.8rem;
   }
 
+  /* ABOUT SECTION */
+  .about-description {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+
   /* PROJECT SECTION */
   .project-heading {
     font-size: 2.2rem;
+    margin-bottom: 1.4rem;
   }
 
   .project-subheading {
+    font-size: 1rem;
+  }
+
+  .btn-code,
+  .btn-site,
+  .btn-description {
+    /* width: 100%; */
+    /* width: 80%;
+    font-size: 2rem; */
+    width: 75%;
+    font-size: 1.3rem;
+  }
+
+  .list-item {
     font-size: 0.8rem;
   }
 }
@@ -1042,12 +1073,23 @@ label {
     padding: 0.5rem;
   }
 
+  /* ABOUT SECTION */
+  .about-description {
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+    padding-left: 1.5rem;
+  }
+
   /* PROJECT SECTION */
   .project-heading {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .project-subheading {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
+
+  /* .list-item {
+    font-size: 0.4rem;
+  } */
 }
