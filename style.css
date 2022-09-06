@@ -835,7 +835,7 @@ label {
 
   /* PROJECT SECTION */
   .project-image {
-    height: 30vh;
+    height: 35vh;
   }
 
   .btn-description {
@@ -877,6 +877,11 @@ label {
 
   .tech-list {
     padding-left: 0;
+  }
+
+  /* PROJECT SECTION */
+  .project-image {
+    height: 30vh;
   }
 }
 
@@ -985,7 +990,10 @@ label {
     grid-template-columns: 1fr 1fr;
   }
 
-  /* STOPPED ON FIXING TECH LIST - NEED TO MAKE THEM WIDER AND FIT BETTER INSIDE THE GRID ABOVE */
+  /* PROJECT SECTION */
+  .project-image {
+    height: 20vh;
+  }
 }
 
 /* 0-560px */
@@ -1109,7 +1117,8 @@ label {
     font-size: 1rem;
   }
 
-  /* .list-item {
-    font-size: 0.4rem;
-  } */
+  /* PROJECT SECTION */
+  .project-image {
+    height: 15vh;
+  }
 }
