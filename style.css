@@ -415,8 +415,35 @@ body {
 /* Will hold our buttons */
 .project-btns {
   text-align: center;
+  margin: 0 auto;
   margin-top: 4rem;
   margin-bottom: 1rem;
+  column-gap: 2rem;
+}
+
+/* OLD VERSION */
+/* .project-btns {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  column-gap: 2rem;
+} */
+
+.btn-code,
+.btn-site {
+  width: 30%;
+}
+
+.btn-code {
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.btn-description {
+  margin-top: 3rem;
+  margin-left: 0rem;
+  width: 63%;
 }
 
 .tech-list {
@@ -440,10 +467,10 @@ body {
   color: rgba(37, 40, 57, 1);
 }
 
-.btn-code,
-.btn-description {
-  margin-left: 2rem;
-}
+/* .btn-code,
+.btn-description { */
+/* margin-left: 2rem; */
+/* } */
 
 .btn-site,
 .btn-code,
