@@ -321,6 +321,7 @@ body {
   /* color: #ffb700; */
   color: white;
   margin-left: 3rem;
+  margin-top: 25vh;
 }
 
 .project-section {
@@ -713,7 +714,7 @@ label {
   .btn-code,
   .btn-site,
   .btn-description {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .project-icon {
     font-size: 2.6rem;
@@ -730,7 +731,7 @@ label {
   }
 
   .project-section {
-    margin-top: 5vw;
+    margin-top: 8vh;
     margin-left: 10vw;
   }
 
@@ -791,7 +792,7 @@ label {
 
   .btn-description {
     margin-top: 3rem;
-    width: 60%;
+    width: 70%;
   }
 
   .btn-code,
@@ -814,6 +815,14 @@ label {
 
   .btn-description {
     width: 70%;
+  }
+
+  .list-item {
+    font-size: 1.2rem;
+  }
+
+  .tech-list {
+    padding-left: 0;
   }
 }
 
@@ -846,6 +855,22 @@ label {
   }
 
   /* PROJECT SECTION */
+  .project-description {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+  }
+
+  .project-heading {
+    font-size: 3.6rem;
+  }
+
+  .project-subheading {
+    font-size: 1.6rem;
+  }
+
+  .project-icon {
+    font-size: 2rem;
+  }
   .project-btns {
     display: grid;
     margin-top: 2rem;
@@ -854,26 +879,41 @@ label {
   .btn-code,
   .btn-site,
   .btn-description {
-    width: 100%;
+    /* width: 100%; */
+    /* width: 80%;
+    font-size: 2rem; */
+    width: 55%;
+    font-size: 1.3rem;
   }
 
+  .btn-description {
+    align-items: center;
+  }
   .btn-code {
     margin-left: 0;
   }
 
-  /* .list-item {
-    font-size: 1rem;
-  } */
+  .btn-description,
+  .btn-code {
+    margin-top: 2rem;
+  }
 
-  /* .tech-list { */
-  /* padding-left: 0; */
-  /* display: grid;
+  .list-item {
+    /* font-size: 1rem; */
+    text-align: center;
+  }
+
+  .tech-list {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-  } */
+  }
+
+  /* STOPPED ON FIXING TECH LIST - NEED TO MAKE THEM WIDER AND FIT BETTER INSIDE THE GRID ABOVE */
 }
 
 /* 0-560px */
 @media (max-width: 28em) {
+  /* INTRO SECTION */
   .intro-btns {
     display: grid;
     grid-template-columns: 1fr;
@@ -892,6 +932,15 @@ label {
   .flex-items {
     gap: 2rem;
   }
+
+  /* PROJECT SECTION */
+  .project-heading {
+    font-size: 3rem;
+  }
+
+  .project-subheading {
+    font-size: 1.2rem;
+  }
 }
 
 /* 0-520px */
@@ -907,10 +956,20 @@ label {
   .intro-subheading-2 {
     font-size: 1.8rem;
   }
+
+  /* PROJECT SECTION */
+  .project-heading {
+    font-size: 2.2rem;
+  }
+
+  .project-subheading {
+    font-size: 0.8rem;
+  }
 }
 
 /* 0-360px */
 @media (max-width: 18em) {
+  /* INTRO SECTION */
   .intro-subheading {
     font-size: 2rem;
   }
@@ -926,5 +985,14 @@ label {
   .intro-btn {
     font-size: 1.2rem;
     padding: 0.5rem;
+  }
+
+  /* PROJECT SECTION */
+  .project-heading {
+    font-size: 1.6rem;
+  }
+
+  .project-subheading {
+    font-size: 0.8rem;
   }
 }
