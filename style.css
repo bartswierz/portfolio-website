@@ -73,6 +73,10 @@ body {
   opacity: 100%;
 }
 
+.navbar-toggler {
+  color: #e3a812;
+}
+
 .navbar-brand {
   /* color: white; */
   color: #e3a812;
