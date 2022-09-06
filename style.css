@@ -157,7 +157,7 @@ body {
 }
 
 .section-link {
-  display: block;
+  /* display: block; */
   color: white;
   text-decoration: none;
   transition: 300ms;
@@ -987,6 +987,7 @@ label {
   .intro-btn {
     margin: 0;
     font-size: 1.6rem;
+    width: 80%;
   }
 
   .intro-link-icons {
