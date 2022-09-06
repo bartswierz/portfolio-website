@@ -436,7 +436,6 @@ body {
 }
 
 .btn-code {
-  margin-top: 3rem;
   margin-left: 2rem;
 }
 
@@ -585,6 +584,9 @@ body {
   margin-bottom: 2rem;
   /* color: #2aa0ec; */
   color: white;
+}
+
+.contact-form {
 }
 
 .form-control {
@@ -850,6 +852,32 @@ label {
 
   .tech-list {
     padding-left: 0;
+  }
+}
+
+@media (max-width: 40em) {
+  /* CHANGES 50% WIDTH TEXTBOXES TO 100% WIDTH => 1 textbox per row */
+  /* .col-md-6 {
+    width: 100%;
+  } */
+
+  .form-control {
+    width: 100%;
+  }
+
+  .form-resize {
+    width: 100%;
+  }
+
+  .contact-form {
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    width: 90vw;
   }
 }
 
