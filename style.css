@@ -157,9 +157,13 @@ body {
 }
 
 .section-link {
+  display: block;
   color: white;
   text-decoration: none;
   transition: 300ms;
+
+  /* padding: 0rem 5rem 0rem 5rem; */
+  /* padding: auto auto; */
 }
 
 .section-link:hover {
