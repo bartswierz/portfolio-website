@@ -118,7 +118,7 @@ body {
 .nav-link {
   text-align: center;
   color: white;
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   /* border-top: 2px solid #e3a812; */
 }
 
@@ -144,21 +144,31 @@ body {
 
 /*************************************************************************/
 /* INTRODUCTION SECTION */
-.intro-section {
-  margin: 0 auto;
-  padding: 10vw 3rem 3rem 3rem;
-  margin-top: 9rem;
+/* .intro-section { */
+/* margin: 0 auto; */
+/* padding: 10vw 3rem 3rem 3rem; */
+/* margin-top: 9rem; */
 
-  width: 80vw;
-  height: 90vh;
-  /* display: grid; */
-  /* grid-template-columns: 4fr 1fr; */
-  /* text-align: center; */
-  /* width: 100vw; */
-  /* min-width: 100vw; */
-  /*   
+/* width: 80vw;
+  height: 90vh; */
+/* display: grid; */
+/* grid-template-columns: 4fr 1fr; */
+/* text-align: center; */
+/* width: 100vw; */
+/* min-width: 100vw; */
+/*   
   width: 80rem;
   height: 80rem; */
+/* } */
+
+.intro-section {
+  /* margin: 0 auto; */
+  /* margin: 0 auto; */
+
+  /* margin-top: 8rem; */
+  margin-top: 15%;
+  min-height: 80rem;
+  /* min-width: 50%; */
 }
 
 .intro-heading {
@@ -190,13 +200,6 @@ body {
   background-color: rgba(37, 40, 57, 1);
   border: 2px solid white;
 }
-
-/* .intro-btn a {
-  width: 100%;
-  height: 100%;
-} */
-
-/* intro-btn -> section-link->ion-icon */
 
 .intro-btn:hover,
 .intro-btn:active {
@@ -315,9 +318,34 @@ body {
 
 /*************************************************************************/
 /* ABOUT SECTION */
+/* .about-section {
+  width: 80vw;
+  height: 60vh;
+} */
+
+/* .about-header {
+  padding-left: 3rem;
+  font-size: 4rem;
+  /* color: #ffb700; */
+/* color: white; */
+/* font-family: "Goblin One", cursive; */
+/* } */
+
+/* .about-description {
+  font-size: 2.8rem;
+  margin-top: 5rem;
+  padding-left: 6rem;
+  width: 90vw;
+  line-height: 5rem;
+} 
+
 .about-section {
   width: 80vw;
   height: 60vh;
+} */
+.about-section {
+  max-width: 60rem;
+  min-height: 60rem;
 }
 
 .about-header {
@@ -339,12 +367,13 @@ body {
 /*************************************************************************/
 /* PROJECT SECTION */
 .section-header {
-  display: block;
-  font-size: 4rem;
-  /* color: #ffb700; */
+  margin-top: 15rem;
+
+  /* Increase later */
+  font-size: 2rem;
+
   color: white;
   margin-left: 3rem;
-  margin-top: 25vh;
   font-family: "Goblin One", cursive;
 }
 
@@ -352,29 +381,22 @@ body {
   margin: 0 auto;
   /* width: 120rem;
   height: 80rem; */
-  width: 60%;
-  height: 60%;
+  /* margin-top: 5rem; */
+  /* width: 60%;
+  height: 60%; */
+
+  min-width: 100%;
 
   margin-bottom: 40rem;
   /* border: 2px solid #2aa0ec; */
 }
 
 .project-image {
-  /* width: 80%;
-  height: 80%; */
-  width: 50vw;
-  height: 45vh;
-  max-width: 120rem;
   margin: 0 auto;
-  padding: 0rem;
-  border-radius: 10px;
+  max-width: 100rem;
+  border-radius: 20px;
   margin-bottom: 2rem;
-  border-bottom: 1px solid rgba(153, 153, 153, 0.59);
-}
-
-.project-image:hover {
-  /* transform: rotate(-360deg); */
-  /* transition: 1000ms; */
+  /* border-bottom: 1px solid rgba(153, 153, 153, 0.59); */
 }
 
 /* Project Text */
@@ -382,8 +404,7 @@ body {
   margin: 0 auto;
   color: black;
   padding: 2rem;
-  width: 80%;
-  max-width: 120rem;
+  max-width: 100rem;
   border-radius: 10px;
 
   /* DARK THEME */
@@ -444,15 +465,6 @@ body {
   margin-bottom: 1rem;
   column-gap: 2rem;
 }
-
-/* OLD VERSION */
-/* .project-btns {
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-  column-gap: 2rem;
-} */
 
 .btn-code,
 .btn-site {
@@ -687,12 +699,12 @@ label {
   margin: 0 auto;
 }
 
+/* OLD MEDIA QUERIES - REDOING */
 /***********************************************************/
 /* MEDIA QUERIES */
 /* 0-2000px - ULTRA WIDE DESKTOP SCREENS*/
-@media (max-width: 100em) {
-  /* INTRO SECTION */
-  .intro-heading {
+/* @media (max-width: 100em) {
+  INTRO SECTION .intro-heading {
     font-size: 8rem;
   }
 
@@ -713,8 +725,7 @@ label {
     font-size: 2rem;
   }
 
-  /* PROJECT SECTION */
-  .project-image {
+  PROJECT SECTION .project-image {
     width: 60vw;
     height: 35vh;
   }
@@ -745,16 +756,16 @@ label {
     font-weight: 600;
     border: 2px solid white;
   }
-}
+} */
 
 /* 0-1760px - WIDE DESKTOP SCREENS*/
-@media (max-width: 88em) {
-  /* INTRO SECTION */
+/* @media (max-width: 88em) {
+  INTRO SECTION
   .intro-heading {
     font-size: 6rem;
   }
 
-  /* PROJECT SECTION */
+  PROJECT SECTION
   .project-description {
     font-size: 2.6rem;
   }
@@ -773,11 +784,11 @@ label {
     font-size: 2.6rem;
     margin-right: 1rem;
   }
-}
+} */
 
 /* 0-1400px */
-@media (max-width: 70em) {
-  /* PROJECT SECTION */
+/* @media (max-width: 70em) {
+  PROJECT SECTION
   .project-description {
     font-size: 2.8rem;
     text-align: center;
@@ -817,10 +828,10 @@ label {
   .project-image {
     height: 70vh;
   }
-}
+} */
 
 /* 0-1260px */
-@media (max-width: 63em) {
+/* @media (max-width: 63em) {
   .intro-heading {
     font-size: 5rem;
   }
@@ -837,15 +848,15 @@ label {
     font-size: 3rem;
   }
 
-  /* ABOUT SECTION */
+  ABOUT SECTION
   .about-description {
-    /* overflow-y: auto; */
+    overflow-y: auto;
     font-size: 2.4rem;
     margin-bottom: 15rem;
     clear: both;
   }
 
-  /* PROJECT SECTION */
+  PROJECT SECTION
   .project-image {
     height: 35vh;
   }
@@ -863,21 +874,21 @@ label {
   .project-image {
     height: 75vh;
   }
-}
+} */
 
 /* 0-920px */
-@media (max-width: 46em) {
-  /* INTRO SECTION */
+/* @media (max-width: 46em) {
+  INTRO SECTION
   .intro-heading {
     font-size: 5rem;
   }
 
-  /* ABOUT SECTION */
+  ABOUT SECTION
   .about-description {
     font-size: 2rem;
   }
 
-  /* PROJECT SECTION */
+  PROJECT SECTION
   .btn-code,
   .btn-site {
     width: 47%;
@@ -895,18 +906,13 @@ label {
     padding-left: 0;
   }
 
-  /* PROJECT SECTION */
+  PROJECT SECTION
   .project-image {
     height: 35vh;
   }
-}
+} */
 
-@media (max-width: 40em) {
-  /* CHANGES 50% WIDTH TEXTBOXES TO 100% WIDTH => 1 textbox per row */
-  /* .col-md-6 {
-    width: 100%;
-  } */
-
+/* @media (max-width: 40em) {
   .form-control {
     width: 100%;
   }
@@ -916,8 +922,6 @@ label {
   }
 
   .contact-form {
-    /* display: flex;
-    flex-direction: column; */
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -927,14 +931,13 @@ label {
   }
 
   .project-image {
-    /* height: 25vh; */
     height: 40vh;
   }
-}
+} */
 
 /* 0-680px */
-@media (max-width: 34em) {
-  /* INTRO SECTION */
+/* @media (max-width: 34em) {
+  INTRO SECTION
   .intro-section {
     padding: 3rem 0rem 0rem 0rem;
   }
@@ -960,7 +963,7 @@ label {
     font-size: 1.2rem;
   }
 
-  /* PROJECT SECTION */
+  PROJECT SECTION
   .project-description {
     font-size: 1.8rem;
     line-height: 3.6rem;
@@ -1002,7 +1005,6 @@ label {
   }
 
   .list-item {
-    /* font-size: 1rem; */
     text-align: center;
   }
 
@@ -1011,16 +1013,15 @@ label {
     grid-template-columns: 1fr 1fr;
   }
 
-  /* PROJECT SECTION */
+  PROJECT SECTION
   .project-image {
     height: 40vh;
-    /* height: 25vh; */
   }
-}
+} */
 
 /* 0-560px */
-@media (max-width: 28em) {
-  /* INTRO SECTION */
+/* @media (max-width: 28em) {
+  INTRO SECTION
   .intro-btns {
     display: grid;
     grid-template-columns: 1fr;
@@ -1041,13 +1042,13 @@ label {
     gap: 2rem;
   }
 
-  /* ABOUT SECTION */
+  ABOUT SECTION
   .about-description {
     font-size: 1.8rem;
     line-height: 4.2rem;
   }
 
-  /* PROJECT SECTION */
+  PROJECT SECTION
   .project-heading {
     font-size: 3rem;
   }
@@ -1055,11 +1056,11 @@ label {
   .project-subheading {
     font-size: 1.2rem;
   }
-}
+} */
 
 /* 0-520px */
-@media (max-width: 26em) {
-  /* INTRO SECTION */
+/* @media (max-width: 26em) {
+  INTRO SECTION
   .intro-heading {
     font-size: 3.6rem;
   }
@@ -1072,13 +1073,13 @@ label {
     font-size: 1.8rem;
   }
 
-  /* ABOUT SECTION */
+  ABOUT SECTION
   .about-description {
     font-size: 1.6rem;
     line-height: 3.2rem;
   }
 
-  /* PROJECT SECTION */
+  PROJECT SECTION
   .project-heading {
     font-size: 2.2rem;
     margin-bottom: 1.4rem;
@@ -1091,9 +1092,6 @@ label {
   .btn-code,
   .btn-site,
   .btn-description {
-    /* width: 100%; */
-    /* width: 80%;
-    font-size: 2rem; */
     width: 75%;
     font-size: 1.3rem;
   }
@@ -1105,11 +1103,11 @@ label {
   .project-image {
     height: 30vh;
   }
-}
+} */
 
 /* 0-360px */
-@media (max-width: 18em) {
-  /* INTRO SECTION */
+/* @media (max-width: 18em) {
+  INTRO SECTION
   .intro-subheading {
     font-size: 2rem;
   }
@@ -1127,14 +1125,14 @@ label {
     padding: 0.5rem;
   }
 
-  /* ABOUT SECTION */
+  ABOUT SECTION
   .about-description {
     font-size: 1.6rem;
     line-height: 3.5rem;
     padding-left: 1.5rem;
   }
 
-  /* PROJECT SECTION */
+  PROJECT SECTION
   .project-heading {
     font-size: 1.8rem;
   }
@@ -1143,13 +1141,13 @@ label {
     font-size: 1rem;
   }
 
-  /* PROJECT SECTION */
+  PROJECT SECTION
   .project-image {
     height: 30vh;
   }
-}
+} */
 
-@media (max-width: 15em) {
+/* @media (max-width: 15em) {
   .about-header {
     font-size: 3rem;
     text-align: center;
@@ -1174,7 +1172,6 @@ label {
   .btn-code,
   .btn-site,
   .btn-description {
-    /* width: 100%; */
     width: 100%;
     font-size: 1.3rem;
   }
@@ -1191,4 +1188,4 @@ label {
   .intro-section {
     padding: 3rem 0rem 0rem 1rem;
   }
-}
+} */
