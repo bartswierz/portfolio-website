@@ -327,34 +327,8 @@ body {
 
 /*************************************************************************/
 /* ABOUT SECTION */
-/* .about-section {
-  width: 80vw;
-  height: 60vh;
-} */
-
-/* .about-header {
-  padding-left: 3rem;
-  font-size: 4rem;
-  /* color: #ffb700; */
-/* color: white; */
-/* font-family: "Goblin One", cursive; */
-/* } */
-
-/* .about-description {
-  font-size: 2.8rem;
-  margin-top: 5rem;
-  padding-left: 6rem;
-  width: 90vw;
-  line-height: 5rem;
-} 
-
-.about-section {
-  width: 80vw;
-  height: 60vh;
-} */
 .about-section {
   margin: 0 auto;
-  text-align: center;
   max-width: 110rem;
   min-height: 60rem;
 }
@@ -362,7 +336,7 @@ body {
 .about-header {
   /* margin: 0 auto; */
   text-align: center;
-  padding-left: 3rem;
+  /* padding-left: 3rem; */
   font-size: 4rem;
   /* color: #ffb700; */
   color: white;
@@ -372,7 +346,8 @@ body {
 .about-description {
   margin: 0 auto;
   font-size: 2.8rem;
-  padding-left: 6rem;
+  /* padding-left: 6rem; */
+  width: 80%;
   padding-top: 5rem;
   line-height: 5rem;
 }
@@ -392,14 +367,7 @@ body {
 
 .project-section {
   margin: 0 auto;
-  /* width: 120rem;
-  height: 80rem; */
-  /* margin-top: 5rem; */
-  /* width: 60%;
-  height: 60%; */
-
   min-width: 100%;
-
   margin-bottom: 40rem;
   /* border: 2px solid #2aa0ec; */
 }
@@ -418,8 +386,6 @@ body {
   color: black;
   padding: 2rem;
   max-width: 90rem;
-  /* When on mobile/smaller devices use 95% */
-  /* max-width: 95%; */
   border-radius: 10px;
 
   /* DARK THEME */
@@ -482,21 +448,6 @@ body {
   margin-top: 4rem;
   margin-bottom: 1rem;
 }
-
-/* .btn-code,
-.btn-site {
-  width: 30%;
-} */
-
-/* .btn-code {
-  margin-left: 2rem;
-} */
-
-/* .btn-description {
-  margin-top: 3rem;
-  margin-left: 0rem;
-  width: 63%;
-} */
 
 .tech-list {
   display: flex;
@@ -717,7 +668,17 @@ label {
 /* OLD MEDIA QUERIES - REDOING */
 /***********************************************************/
 /* MEDIA QUERIES */
-/* 0-2000px - ULTRA WIDE DESKTOP SCREENS*/
+
+@media (max-width: 992px) {
+  .about-header {
+    font-size: 3.6rem;
+  }
+
+  .about-description {
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .intro-section {
     margin-top: 22%;
@@ -742,6 +703,16 @@ label {
   .intro-btn {
     font-size: 1.2rem;
   }
+
+  /* ABOUT SECTION */
+  .about-header {
+    font-size: 3.2rem;
+  }
+
+  .about-description {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
 }
 
 @media (max-width: 475px) {
@@ -765,6 +736,16 @@ label {
   .intro-btn {
     font-size: 1.2rem;
     padding: 1rem 1rem 1rem 1rem;
+  }
+
+  /* ABOUT SECTION */
+  .about-header {
+    font-size: 2.6rem;
+  }
+
+  .about-description {
+    font-size: 1.6rem;
+    padding-top: 2rem;
   }
 }
 
