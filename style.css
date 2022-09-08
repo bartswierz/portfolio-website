@@ -64,10 +64,9 @@ body {
 /* NAVIGATION SECTION */
 .navbar {
   color: white;
-  background-color: rgba(37, 40, 57);
-  opacity: 1;
+  /* background-color: rgba(37, 40, 57); */
   /* background-color: rgba(37, 40, 57, 1); */
-  /* background-color: rgba(37, 40, 57, 0.9); */
+  background-color: rgba(37, 40, 57, 0.9);
   box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
@@ -167,13 +166,13 @@ body {
   /* REMOVE text-align in media query */
   text-align: center;
   /* margin-top: 8rem; */
-  margin-top: 15%;
+  margin-top: 18%;
   min-height: 80rem;
   /* min-width: 50%; */
 }
 
 .intro-heading {
-  font-size: 6rem;
+  font-size: 5.4rem;
   font-weight: 700;
 }
 
@@ -719,489 +718,77 @@ label {
 /***********************************************************/
 /* MEDIA QUERIES */
 /* 0-2000px - ULTRA WIDE DESKTOP SCREENS*/
-/* @media (max-width: 100em) {
-  INTRO SECTION .intro-heading {
-    font-size: 8rem;
-  }
-
-  .intro-subheading {
-    font-size: 5rem;
-  }
-
-  .intro-subheading-2 {
-    font-size: 3.6rem;
-  }
-
-  .intro-link-icons {
-    margin: 1rem 0rem 1rem 0rem;
-    font-size: 4rem;
-  }
-
-  .intro-btn {
-    font-size: 2rem;
-  }
-
-  PROJECT SECTION .project-image {
-    width: 60vw;
-    height: 35vh;
-  }
-
-  .project-content {
-    width: 100%;
-  }
-
-  .list-item {
-    font-size: 1.6rem;
-  }
-
-  .project-description {
-    font-size: 3.2rem;
-    line-height: 5rem;
-  }
-
-  .project-btns {
-    margin-top: 0rem;
-  }
-
-  .btn-site,
-  .btn-code,
-  .btn-description,
-  .modal-close {
-    padding: 1rem 2rem 1rem 2rem;
-    font-size: 2.6rem;
-    font-weight: 600;
-    border: 2px solid white;
-  }
-} */
-
-/* 0-1760px - WIDE DESKTOP SCREENS*/
-/* @media (max-width: 88em) {
-  INTRO SECTION
-  .intro-heading {
-    font-size: 6rem;
-  }
-
-  PROJECT SECTION
-  .project-description {
-    font-size: 2.6rem;
-  }
-
-  .project-image,
-  .project-content {
-    width: 70vw;
-  }
-
-  .btn-code,
-  .btn-site,
-  .btn-description {
-    font-size: 1.6rem;
-  }
-  .project-icon {
-    font-size: 2.6rem;
-    margin-right: 1rem;
-  }
-} */
-
-/* 0-1400px */
-/* @media (max-width: 70em) {
-  PROJECT SECTION
-  .project-description {
-    font-size: 2.8rem;
-    text-align: center;
-  }
-
-  .project-section {
-    margin-top: 8vh;
-    margin-left: 10vw;
-  }
-
-  .project-image,
-  .project-content {
-    width: 80vw;
-  }
-
-  .btn-code,
-  .btn-site {
-    width: 30%;
-  }
-
-  .btn-code {
-    margin-top: 3rem;
-    margin-left: 2rem;
-  }
-
-  .btn-description {
-    margin-top: 3rem;
-    margin-left: 0rem;
-    width: 63%;
-  }
-
-  .project-icon {
-    font-size: 2.6rem;
-    margin-right: 1rem;
-  }
-
-  .project-image {
-    height: 70vh;
-  }
-} */
-
-/* 0-1260px */
-/* @media (max-width: 63em) {
-  .intro-heading {
-    font-size: 5rem;
-  }
-
-  .intro-subheading {
-    font-size: 3.6rem;
-  }
-
-  .intro-subheading-2 {
-    font-size: 2.8rem;
-  }
-
-  .intro-link-icons {
-    font-size: 3rem;
-  }
-
-  ABOUT SECTION
-  .about-description {
-    overflow-y: auto;
-    font-size: 2.4rem;
-    margin-bottom: 15rem;
-    clear: both;
-  }
-
-  PROJECT SECTION
-  .project-image {
-    height: 35vh;
-  }
-
-  .btn-description {
-    margin-top: 3rem;
-    width: 70%;
-  }
-
-  .btn-code,
-  .btn-site {
-    width: 34%;
-  }
-
-  .project-image {
-    height: 75vh;
-  }
-} */
-
-/* 0-920px */
-/* @media (max-width: 46em) {
-  INTRO SECTION
-  .intro-heading {
-    font-size: 5rem;
-  }
-
-  ABOUT SECTION
-  .about-description {
-    font-size: 2rem;
-  }
-
-  PROJECT SECTION
-  .btn-code,
-  .btn-site {
-    width: 47%;
-  }
-
-  .btn-description {
-    width: 70%;
-  }
-
-  .list-item {
-    font-size: 1.2rem;
-  }
-
-  .tech-list {
-    padding-left: 0;
-  }
-
-  PROJECT SECTION
-  .project-image {
-    height: 35vh;
-  }
-} */
-
-/* @media (max-width: 40em) {
-  .form-control {
-    width: 100%;
-  }
-
-  .form-resize {
-    width: 100%;
-  }
-
-  .contact-form {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .contact-section {
-    width: 90vw;
-  }
-
-  .project-image {
-    height: 40vh;
-  }
-} */
-
-/* 0-680px */
-/* @media (max-width: 34em) {
-  INTRO SECTION
+@media (max-width: 768px) {
   .intro-section {
-    padding: 3rem 0rem 0rem 0rem;
+    margin-top: 22%;
   }
+}
 
+@media (max-width: 575px) {
   .intro-heading {
-    font-size: 4.6rem;
-  }
-
-  .intro-subheading {
     font-size: 3.2rem;
   }
 
-  .intro-subheading-2 {
+  .intro-subheading {
     font-size: 2.4rem;
+    padding-left: 5rem;
+    padding: 0rem 3rem 0rem 3rem;
   }
 
-  .intro-link-icons {
-    margin: 1rem 0rem 1rem 0rem;
-    font-size: 2.2rem;
-  }
-
-  .intro-btn {
-    font-size: 1.2rem;
-  }
-
-  PROJECT SECTION
-  .project-description {
-    font-size: 1.8rem;
-    line-height: 3.6rem;
-  }
-
-  .project-heading {
-    font-size: 3.6rem;
-  }
-
-  .project-subheading {
-    font-size: 1.6rem;
-  }
-
-  .project-icon {
+  .intro-subheading-2 {
     font-size: 2rem;
   }
-  .project-btns {
-    display: grid;
-    margin-top: 2rem;
-  }
-
-  .btn-code,
-  .btn-site,
-  .btn-description {
-    width: 65%;
-    font-size: 1.3rem;
-  }
-
-  .btn-description {
-    align-items: center;
-  }
-  .btn-code {
-    margin-left: 0;
-  }
-
-  .btn-description,
-  .btn-code {
-    margin-top: 2rem;
-  }
-
-  .list-item {
-    text-align: center;
-  }
-
-  .tech-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  PROJECT SECTION
-  .project-image {
-    height: 40vh;
-  }
-} */
-
-/* 0-560px */
-/* @media (max-width: 28em) {
-  INTRO SECTION
-  .intro-btns {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 1.6rem;
-  }
 
   .intro-btn {
-    margin: 0;
-    font-size: 1.6rem;
-    width: 80%;
-  }
-
-  .intro-link-icons {
-    font-size: 3rem;
-  }
-
-  .flex-items {
-    gap: 2rem;
-  }
-
-  ABOUT SECTION
-  .about-description {
-    font-size: 1.8rem;
-    line-height: 4.2rem;
-  }
-
-  PROJECT SECTION
-  .project-heading {
-    font-size: 3rem;
-  }
-
-  .project-subheading {
     font-size: 1.2rem;
   }
-} */
+}
 
-/* 0-520px */
-/* @media (max-width: 26em) {
-  INTRO SECTION
-  .intro-heading {
-    font-size: 3.6rem;
+@media (max-width: 475px) {
+  .intro-section {
+    margin-top: 30%;
   }
-
-  .intro-subheading {
+  .intro-heading {
     font-size: 2.6rem;
   }
 
+  .intro-subheading {
+    font-size: 2.2rem;
+    padding-left: 5rem;
+    padding: 0rem 3rem 0rem 3rem;
+  }
+
   .intro-subheading-2 {
     font-size: 1.8rem;
   }
 
-  ABOUT SECTION
-  .about-description {
+  .intro-btn {
+    font-size: 1.2rem;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .intro-section {
+    margin-top: 35%;
+  }
+
+  .intro-heading {
+    font-size: 2rem;
+  }
+
+  .intro-subheading {
+    font-size: 1.8rem;
+    padding-left: 5rem;
+    padding: 0rem 3rem 0rem 3rem;
+  }
+
+  .intro-subheading-2 {
     font-size: 1.6rem;
-    line-height: 3.2rem;
   }
 
-  PROJECT SECTION
-  .project-heading {
-    font-size: 2.2rem;
-    margin-bottom: 1.4rem;
-  }
-
-  .project-subheading {
-    font-size: 1rem;
-  }
-
-  .btn-code,
-  .btn-site,
-  .btn-description {
-    width: 75%;
-    font-size: 1.3rem;
-  }
-
-  .list-item {
+  .intro-btn {
     font-size: 0.8rem;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
   }
-
-  .project-image {
-    height: 30vh;
-  }
-} */
-
-/* 0-360px */
-/* @media (max-width: 18em) {
-  INTRO SECTION
-  .intro-subheading {
-    font-size: 2rem;
-  }
-
-  .intro-heading {
-    font-size: 3.2rem;
-  }
-
-  .intro-subheading-2 {
-    font-size: 1.6rem;
-  }
-
-  .intro-btn {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-
-  ABOUT SECTION
-  .about-description {
-    font-size: 1.6rem;
-    line-height: 3.5rem;
-    padding-left: 1.5rem;
-  }
-
-  PROJECT SECTION
-  .project-heading {
-    font-size: 1.8rem;
-  }
-
-  .project-subheading {
-    font-size: 1rem;
-  }
-
-  PROJECT SECTION
-  .project-image {
-    height: 30vh;
-  }
-} */
-
-/* @media (max-width: 15em) {
-  .about-header {
-    font-size: 3rem;
-    text-align: center;
-  }
-  .about-description {
-    font-size: 1.2rem;
-    line-height: 3.5rem;
-    padding-left: 1.5rem;
-  }
-
-  .section-header {
-    font-size: 3rem;
-    text-align: center;
-    margin-left: 1rem;
-  }
-
-  .project-description {
-    font-size: 1.4rem;
-    line-height: 3.2rem;
-  }
-
-  .btn-code,
-  .btn-site,
-  .btn-description {
-    width: 100%;
-    font-size: 1.3rem;
-  }
-
-  .tech-list {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .project-image {
-    height: 22vh;
-  }
-
-  .intro-section {
-    padding: 3rem 0rem 0rem 1rem;
-  }
-} */
+}
