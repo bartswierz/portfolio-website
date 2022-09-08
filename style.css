@@ -164,7 +164,8 @@ body {
 .intro-section {
   /* margin: 0 auto; */
   /* margin: 0 auto; */
-
+  /* REMOVE text-align in media query */
+  text-align: center;
   /* margin-top: 8rem; */
   margin-top: 15%;
   min-height: 80rem;
@@ -172,8 +173,16 @@ body {
 }
 
 .intro-heading {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 700;
+}
+
+.intro-subheading {
+  font-size: 3.2rem;
+}
+
+.intro-subheading-2 {
+  font-size: 2.8rem;
 }
 
 .intro-description {
@@ -253,11 +262,12 @@ body {
 }
 .intro-btns {
   margin-top: 3rem;
+  gap: 1rem;
 }
 
-.flex-items {
+.flex-center {
   display: flex;
-  column-gap: 0.5rem;
+  justify-content: center;
 }
 
 /* TESTING FADE IN */
@@ -344,11 +354,15 @@ body {
   height: 60vh;
 } */
 .about-section {
-  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 110rem;
   min-height: 60rem;
 }
 
 .about-header {
+  /* margin: 0 auto; */
+  text-align: center;
   padding-left: 3rem;
   font-size: 4rem;
   /* color: #ffb700; */
@@ -357,12 +371,10 @@ body {
 }
 
 .about-description {
-  font-size: 2.8rem;
-  margin-top: 5rem;
-  padding-left: 6rem;
-  /* width: 90vw; */
-  width: 50vw;
   margin: 0 auto;
+  font-size: 2.8rem;
+  padding-left: 6rem;
+  padding-top: 5rem;
   line-height: 5rem;
 }
 
@@ -407,6 +419,8 @@ body {
   color: black;
   padding: 2rem;
   max-width: 90rem;
+  /* When on mobile/smaller devices use 95% */
+  /* max-width: 95%; */
   border-radius: 10px;
 
   /* DARK THEME */
