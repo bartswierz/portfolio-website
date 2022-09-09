@@ -829,7 +829,7 @@ label {
   }
 
   .btn-description {
-    width: 50%;
+    width: 65%;
   }
 
   button.btn-code,
@@ -838,7 +838,7 @@ label {
   }
 
   a.click-zone {
-    width: 50%;
+    width: 65%;
   }
 }
 
@@ -885,7 +885,15 @@ label {
   }
 
   .project-heading {
-    line-height: 2rem;
+    line-height: 3rem;
+  }
+
+  .btn-description {
+    width: 75%;
+  }
+
+  a.click-zone {
+    width: 75%;
   }
 
   /* CONTACT FORM */
