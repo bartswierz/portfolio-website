@@ -21,6 +21,7 @@ HOVER/ACTIVE
 }
 
 html {
+  /* 1 rem = 10px */
   font-size: 62.5%;
 }
 
@@ -669,6 +670,47 @@ label {
 /***********************************************************/
 /* MEDIA QUERIES */
 
+@media (max-width: 1200px) {
+  .section-header {
+    text-align: center;
+  }
+
+  /* PROJECT SECTION */
+  .project-image {
+    max-width: 76rem;
+  }
+
+  .project-content {
+    max-width: 75rem;
+  }
+
+  .project-heading {
+    font-size: 3.6rem;
+  }
+
+  .project-subheading {
+    font-size: 1.6rem;
+  }
+
+  .list-item {
+    font-size: 1.2rem;
+  }
+
+  .project-description {
+    font-size: 1.6rem;
+  }
+
+  .btn-code,
+  .btn-site,
+  .btn-description {
+    font-size: 1.2rem;
+  }
+
+  .project-icon {
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width: 992px) {
   .about-header {
     font-size: 3.6rem;
@@ -677,11 +719,44 @@ label {
   .about-description {
     font-size: 2.2rem;
   }
+
+  /* PROJECT SECTION */
+  .project-image {
+    max-width: 59rem;
+  }
+
+  .project-content {
+    max-width: 58rem;
+  }
 }
 
+/* STOPPED HERE AT 768px */
 @media (max-width: 768px) {
   .intro-section {
     margin-top: 22%;
+  }
+
+  /* PROJECT SECTION */
+  .project-btns {
+    gap: 1rem;
+  }
+
+  .btn-code,
+  .btn-site,
+  .btn-description {
+    padding: 1rem 0.7rem 1rem 0.7rem;
+  }
+
+  .project-image {
+    max-width: 45rem;
+  }
+
+  .project-content {
+    max-width: 43rem;
+  }
+
+  .list-item {
+    font-size: 1rem;
   }
 }
 
@@ -712,6 +787,27 @@ label {
   .about-description {
     font-size: 2rem;
     line-height: 4rem;
+  }
+
+  /* PROJECT BTNS */
+  .project-btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .btn-description {
+    width: 50%;
+  }
+
+  button.btn-code,
+  button.btn-site {
+    width: 100%;
+  }
+
+  a.click-zone {
+    width: 50%;
   }
 }
 
