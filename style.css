@@ -761,6 +761,7 @@ label {
 }
 
 @media (max-width: 575px) {
+  /* INTRO SECTION */
   .intro-heading {
     font-size: 3.2rem;
   }
@@ -789,12 +790,27 @@ label {
     line-height: 4rem;
   }
 
+  /* PROJECT SECTION */
+  .project-image {
+    max-width: 38rem;
+  }
+
+  .project-content {
+    max-width: 36rem;
+  }
+
+  .tech-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+
   /* PROJECT BTNS */
   .project-btns {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin-top: 1.5rem;
+    margin-top: 1.8rem;
   }
 
   .btn-description {
@@ -843,6 +859,15 @@ label {
     font-size: 1.6rem;
     padding-top: 2rem;
   }
+
+  /* PROJECT SECTION */
+  .project-image {
+    max-width: 32rem;
+  }
+
+  .project-content {
+    max-width: 29rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -867,5 +892,50 @@ label {
   .intro-btn {
     font-size: 0.8rem;
     padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+  }
+
+  /* PROJECT SECTION */
+  .project-image {
+    max-width: 35rem;
+  }
+
+  .project-content {
+    max-width: 24rem;
+  }
+
+  .project-heading {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+
+  .project-subheading {
+    font-size: 1.2rem;
+    /* margin-top: 1rem; */
+  }
+
+  .btn-description {
+    width: 90%;
+  }
+
+  button.btn-code,
+  button.btn-site {
+    width: 100%;
+  }
+
+  a.click-zone {
+    width: 90%;
+  }
+
+  .tech-list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-left: 0;
+  }
+
+  .list-item {
+    width: 70%;
+  }
+  .section-header {
+    margin-left: 0;
   }
 }
