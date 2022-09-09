@@ -728,6 +728,11 @@ label {
   .project-content {
     max-width: 58rem;
   }
+
+  /* CONTACT FORM */
+  .contact-section {
+    max-width: 56rem;
+  }
 }
 
 /* STOPPED HERE AT 768px */
@@ -757,6 +762,16 @@ label {
 
   .list-item {
     font-size: 1rem;
+  }
+
+  /* CONTACT FORM */
+  .contact-section {
+    /* max-width: 44rem; */
+    max-width: 95%;
+  }
+
+  .row {
+    flex-direction: column;
   }
 }
 
@@ -867,6 +882,16 @@ label {
 
   .project-content {
     max-width: 29rem;
+  }
+
+  .project-heading {
+    line-height: 2rem;
+  }
+
+  /* CONTACT FORM */
+  .contact-section {
+    min-width: 23rem;
+    padding: 1rem 1.2rem 1rem 1.2rem;
   }
 }
 
