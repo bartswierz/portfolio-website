@@ -132,6 +132,8 @@ body {
   /* color: rgba(255, 255, 255, 0.661); */
   color: #e3a812;
   text-decoration: solid;
+
+  transition: 300ms ease-in-out;
 }
 
 .nav-icon {
@@ -208,6 +210,7 @@ body {
   color: white;
   background-color: rgba(37, 40, 57, 1);
   border: 2px solid white;
+  transition: 300ms ease-in-out;
 }
 
 .intro-btn:hover,
@@ -486,6 +489,7 @@ body {
   background-color: rgba(37, 40, 57, 1);
   border: 2px solid white;
 
+  transition: 300ms ease-in-out;
   /* LIGHT THEME */
   /* background-color: #2aa0ec;
   border: 0px solid #2aa0ec; */
@@ -610,11 +614,17 @@ body {
   background-color: #e3a812;
   border: 1px solid #e3a812;
   padding: 1rem 1rem 1rem 1rem;
+  transition: 0.2s ease-in-out;
 }
 
-.form-btn:hover,
-.form-btn:active {
+.form-btn:hover {
   background-color: #c59210;
+  transform: scale(1.1);
+}
+
+.form-btn:active {
+  background-color: #af810e;
+  transform: scale(1);
 }
 
 .form-btn:link,
@@ -653,6 +663,7 @@ label {
   padding: 1rem;
   border: 2px solid white;
   color: white;
+  transition: 300ms ease-in-out;
   /* border: 2px solid #2aa0ec; */
 }
 
