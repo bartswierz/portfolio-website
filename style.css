@@ -145,6 +145,15 @@ body {
   font-size: 3rem;
 }
 
+#projects,
+#contact {
+  scroll-margin-top: 100px;
+}
+
+#about {
+  scroll-margin-top: 300px;
+}
+
 /*************************************************************************/
 /* INTRODUCTION SECTION */
 /* .intro-section { */
