@@ -67,6 +67,7 @@ ul {
   width: 100vw;
   opacity: 100%;
 
+  /* For navbar hiding(Scroll Down)/display(Scroll Up)  */
   transition: top 0.3s;
 }
 
@@ -144,13 +145,14 @@ ul {
   box-shadow: 0 0 0 0;
 }
 
-#projects,
-#contact {
+#about {
+  /* scroll-margin-top: 300px; */
   scroll-margin-top: 100px;
 }
 
-#about {
-  scroll-margin-top: 300px;
+#projects,
+#contact {
+  scroll-margin-top: 100px;
 }
 
 /*************************************************************************/
