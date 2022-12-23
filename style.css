@@ -639,13 +639,14 @@ label {
 .footer-section {
   display: flex;
   justify-content: center;
-  min-height: 8rem;
+  min-height: 12rem;
   background-color: rgba(37, 40, 57, 1);
 }
 
 .footer-links {
   display: flex;
   column-gap: 4px;
+  padding-top: 8px;
 }
 
 .link-icon-container,
