@@ -818,6 +818,11 @@ a {
 
 @media (max-width: 576px) {
   /* INTRO SECTION */
+  .intro-section {
+    min-height: 75rem;
+    padding-top: 14vh;
+  }
+
   .intro-heading {
     font-size: 3.2rem;
   }
@@ -966,7 +971,7 @@ a {
   }
 
   .intro-btn {
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
     padding: 0.8rem 0.8rem 0.8rem 0.8rem;
   }
 
