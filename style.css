@@ -66,6 +66,8 @@ ul {
   top: 0;
   width: 100vw;
   opacity: 100%;
+
+  transition: top 0.3s;
 }
 
 .navbar-brand {
