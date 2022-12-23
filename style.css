@@ -220,7 +220,6 @@ ul {
   vertical-align: middle;
   font-size: 3rem;
   color: #e3a812;
-  margin-right: 0.5rem;
 }
 
 .intro-link-icons:hover,
@@ -649,15 +648,19 @@ label {
   column-gap: 4px;
 }
 
-.link-icon-container {
+.link-icon-container,
+.intro-link-icon-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid white;
   width: 52px;
   height: 47px;
   padding: 2px;
   transition: 300ms ease-in-out;
+}
+
+.link-icon-container {
+  border: 2px solid white;
 }
 
 .link-icon-container:hover,
@@ -705,13 +708,15 @@ a {
   border: 2px solid #ffb700;
 }
 
-.link-icon-text {
+.link-icon-text,
+.intro-link-icon-text {
   text-align: center;
-  /* width: 44px; */
   color: white;
   transition: 300ms ease-in-out;
-  /* width: 100%; */
-  /* text-decoration: none; */
+}
+
+.intro-link-icon-text {
+  color: #ffb700;
 }
 
 /***********************************************************/
