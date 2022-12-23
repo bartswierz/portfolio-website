@@ -639,7 +639,7 @@ label {
 .footer-section {
   display: flex;
   justify-content: center;
-  min-height: 12rem;
+  min-height: 7rem;
   background-color: rgba(37, 40, 57, 1);
 }
 
