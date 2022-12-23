@@ -11,7 +11,7 @@ window.onscroll = function () {
     document.getElementById("my-navbar").style.top = "0";
   } else {
     // User Scrolled DOWN - 67.25px is current navbar height
-    document.getElementById("my-navbar").style.top = "-67.25px";
+    document.getElementById("my-navbar").style.top = "-250px";
   }
   // Update value for future comparison
   prevScrollPos = currentScrollPos;
