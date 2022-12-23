@@ -219,12 +219,14 @@ ul {
 .intro-link-icons {
   vertical-align: middle;
   font-size: 3rem;
+  transition: 200ms ease-in;
   color: #e3a812;
 }
 
 .intro-link-icons:hover,
 .intro-link-icons:active {
-  color: #ffb700;
+  /* color: #ffb700; */
+  color: #0072fe;
 }
 
 /* Adds a small gap between buttons */
