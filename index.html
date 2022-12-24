@@ -78,11 +78,6 @@
           <p class="intro-subheading">Turning <span class="highlight">ideas</span> into <span class="highlight">reality</span> by <span class="highlight">building</span></p>
           <p class="intro-subheading-2">Let's <span class="highlight">build</span> something</p>
         </div>
-        <!-- <div class="flex-center">
-          <a href="https://www.linkedin.com/in/bartosz-swierzynski" target="_blank"><ion-icon name="logo-linkedin" class="intro-link-icons"></ion-icon></a>
-          <a href="https://github.com/bartswierz" target="_blank"><ion-icon name="logo-github" class="intro-link-icons"></ion-icon></ion-icon></a>
-          <a href="#contact"><ion-icon name="mail-outline" class="intro-link-icons"></ion-icon></a>
-        </div> -->
 
         <div class="flex-center">
           <a href="https://www.linkedin.com/in/bartosz-swierzynski" target="_blank" class="intro-link-icon-container">
@@ -111,16 +106,6 @@
             </button>
           </a>
         </div>
-          <!-- PREVIOUS -->
-          <!-- <button class="intro-btn">
-            <a class="section-link" href="#projects"><span>See Projects <ion-icon name="arrow-forward-outline" class="intro-icon"></ion-icon></span></a>
-          </button> -->
-          <!-- PREVIOUS -->
-          <!-- <button class="intro-btn space-left">
-            <a class="section-link" href="#contact"><span>Contact Me<ion-icon name="arrow-forward-outline" class="intro-icon space-left"></ion-icon></span></a>
-          </button> -->
-        <!-- </div> -->
-      <!-- </div> -->
     </div>
 
     <!-- ABOUT ME SECTION -->
@@ -128,10 +113,6 @@
       <h1 class="about-header" id="about">About Me</h1>
       <div class="container-fluid">
         <p class="about-description">
-          <!-- I'm a <span class="highlight">Frontend Developer</span> studying <span class="highlight">Computer Science</span> at <span class="highlight">Depaul University</span>. With <span class="highlight">programming</span>, I am able to do what I love everyday. It's not work if you love what you do, and for me, that is <span class="highlight">Web Development</span>. The <span class="highlight">learning</span> never stops, and neither do <span class="highlight">we</span>.  -->
-
-          <!-- I'm a <span class="highlight">Frontend Developer</span> studying <span class="highlight">Computer Science</span> at <span class="highlight">Depaul University</span>. I love <span class="highlight">bringing ideas to life</span> by <span class="highlight">designing</span> and <span class="highlight">building</span> websites that help <span class="highlight">grow a brand</span>. I truly enjoy <span class="highlight">bringing my own ideas to life</span> by building personal projects. This has made the <span class="highlight">journey of mastering the frontend</span> enjoyable. It's not work if you love what you do, and for me, that is <span class="highlight">Web Development</span>.  -->
-
           I'm a <span class="highlight">Frontend Developer</span> studying <span class="highlight">Computer Science</span> at <span class="highlight">Depaul University</span> with a Bachelors Degree anticipated Spring 2023. I enjoy starting a project with an <span class="highlight">idea</span> and then <span class="highlight">designing</span> and <span class="highlight">building</span> a site around it <span class="highlight">start</span> to <span class="highlight">finish</span>. I love to see the <span class="highlight">app grow</span> and find myself always coming up with <span class="highlight">ideas</span> on what to add <span class="highlight">next</span>. This has made the <span class="highlight">journey of mastering the frontend</span> enjoyable. It's not work if you love what you do, and for me, that is <span class="highlight">Web Development</span>. 
       </p>
       <p class="about-description">
@@ -144,7 +125,9 @@
     
     <!-- PROJECT SECTION -->
     <h1 class="section-header" id="projects">Projects</h1>
-    <div class="project-section">
+    <!-- Project container IS FOR INTERSECTION OBSERVER FOR FADE  -->
+    <div class="project-container">
+    <div class="project-section animate-proj-1">
       <div class="container-fluid">
           <!-- Image -->
           <div class="row">
@@ -170,19 +153,15 @@
                   <!-- OPEN REPO CODE -->
                   <a class="click-zone" href="https://github.com/bartswierz/shopping-website" target="_blank"><button class="btn-code"><ion-icon name="code-slash-outline" class="project-icon"></ion-icon>View Code</button></a>
                   <!-- OPEN MODAL BUTTON -->
-                  <!-- <div> -->
                     <button type="button" class="btn-description" data-bs-toggle="modal" data-bs-target="#projectModal1">
                       <ion-icon name="enter-outline" class="project-icon "></ion-icon>Project Description
                     </button>
-                  <!-- </div> -->
-                <!-- </div> -->
                 <!-- MODAL CONTENT -->
                 <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h1 class="modal-title" id="exampleModalLabel">Project Overview</h1>
-                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                       </div>
                       <div class="modal-body">
                         <div class="modal-divider">
@@ -224,8 +203,8 @@
       </div>
     
     
-    <!-- PROJECT #1 -->
-    <div class="project-section">
+    <!-- PROJECT #2 -->
+    <div class="project-section animate-proj-2">
       <div class="container-fluid">
           <!-- Image -->
           <div class="row">
@@ -303,8 +282,8 @@
       </div>
 
     <!-- PROJECT SECTION -->
-    <!-- PROJECT #1 -->
-    <div class="project-section">
+    <!-- PROJECT #3 -->
+    <div class="project-section animate-proj-3">
       <div class="container-fluid">
           <!-- Image -->
           <div class="row">
@@ -379,7 +358,7 @@
           </div>
         </div>
       </div>
-
+    </div>
     
 
     
@@ -389,7 +368,7 @@
     <div class="container contact-section" id="contact">
       <!-- <form> -->
       <!-- When someone submits the form, PUSH all data to the action value -->
-      <div class="contact-form">
+      <div class="contact-form animated">
         <form action="https://formsubmit.co/30c04b87b4e36361c6cf0ab295b9e6c1" method="POST">
           <h1 class="contact-header">Contact Me</h1>
           <div class="row">

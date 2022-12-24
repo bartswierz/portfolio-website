@@ -1010,3 +1010,50 @@ a {
     margin-left: 0;
   }
 }
+
+/* KEYFRAMES - ANIMATIONS */
+.fadeInBottom {
+  /* -webkit-animation: fadeInBottom 1.2s both;
+  animation: fadeInBottom 1.2s both; */
+  -webkit-animation: fadeInBottom 1.4s both;
+  animation: fadeInBottom 1.4s both;
+}
+
+@keyframes fadeInBottom {
+  /* 0% OF THE ANIMATION */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(250px);
+  }
+
+  /* Goes 50px PAST destination */
+  50% {
+    -webkit-transform: translateY(-25px);
+  }
+
+  /* 100% OF THE ANIMATION - COMPLETION */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+/* Goes from BOTTOM to TOP */
+@-webkit-keyframes fadeInBottom {
+  /* 0% OF THE ANIMATION */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(250px);
+  }
+
+  /* Goes 50px PAST destination */
+  50% {
+    -webkit-transform: translateY(-25px);
+  }
+
+  /* 100% OF THE ANIMATION - COMPLETION */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
