@@ -82,3 +82,14 @@ contactFormObserver.observe(contactForm);
 
 // //Same as -> footerLinkObserver.observe(document.querySelector(".footer-link"));
 // footerLinkObserver.observe(allFooterLinks);
+
+const aboutSection = document.querySelector(".about-section");
+
+const aboutSectionObserver = new IntersectionObserver((entry) => {
+  if (entry[0].isIntersecting) {
+    document.querySelector(".about-section").classList.add("fade-in");
+  }
+});
+
+//passing observer the div with class name 'about-section'
+aboutSectionObserver.observe(aboutSection);
