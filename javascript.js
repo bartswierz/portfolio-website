@@ -37,12 +37,48 @@ const projectObserver = new IntersectionObserver((entries) => {
       in this query selector we are creating string literal for one of the three project sections -> 
       (i.e. document.querySelector('.animate-proj-1') )
       */
-      document.querySelector(`.${entry.target.classList[1]}`).classList.add("fadeInBottom");
+      document.querySelector(`.${entry.target.classList[1]}`).classList.add("slideInBottom");
     }
   });
 });
 
-//Observes ALL THREE PROJECT SECTIONS - 3 Projects total
+//Observes ALL THREE PROJECT SECTIONS
 allProjects.forEach((project) => {
   projectObserver.observe(project);
 });
+
+const contactForm = document.querySelector(".contact-section");
+
+const contactFormObserver = new IntersectionObserver((entry) => {
+  // if(entries[0])
+  console.log("Contact Form entry: ", entry);
+  if (entry[0].isIntersecting) {
+    // document.querySelector(".contact-section").classList.add("fadeInBottom");
+    // document.querySelector(".contact-section").classList.add("fadeInLeft");
+    document.querySelector(".contact-section").classList.add("slideInLeft");
+  }
+});
+
+//passing observer the div with class name 'contact-section'
+contactFormObserver.observe(contactForm);
+
+/*************************************************************/
+//Observes ALL THREE FOOTER LINKS
+const allFooterLinks = document.querySelector(".footer-link");
+// const allProjects = document.querySelectorAll(".project-section");
+
+const footerLinkObserver = new IntersectionObserver((entries) => {
+  // If entry intersects then we will display project to user
+  console.log("entries: ", entries);
+  entries.forEach((entry) => {
+    // If user reaches footer then give all three links fade in
+    if (entry.isIntersecting) {
+      document.querySelectorAll(".footer-link")[0].classList.add("slideInRightIcon");
+      document.querySelectorAll(".footer-link")[1].classList.add("slideInRightIcon");
+      document.querySelectorAll(".footer-link")[2].classList.add("slideInRightIcon");
+    }
+  });
+});
+
+//Same as -> footerLinkObserver.observe(document.querySelector(".footer-link"));
+footerLinkObserver.observe(allFooterLinks);
