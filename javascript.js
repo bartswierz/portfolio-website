@@ -64,21 +64,21 @@ contactFormObserver.observe(contactForm);
 
 /*************************************************************/
 //Observes ALL THREE FOOTER LINKS
-const allFooterLinks = document.querySelector(".footer-link");
-// const allProjects = document.querySelectorAll(".project-section");
+// const allFooterLinks = document.querySelector(".footer-link");
+// // const allProjects = document.querySelectorAll(".project-section");
 
-const footerLinkObserver = new IntersectionObserver((entries) => {
-  // If entry intersects then we will display project to user
-  console.log("entries: ", entries);
-  entries.forEach((entry) => {
-    // If user reaches footer then give all three links fade in
-    if (entry.isIntersecting) {
-      document.querySelectorAll(".footer-link")[0].classList.add("slideInRightIcon");
-      document.querySelectorAll(".footer-link")[1].classList.add("slideInRightIcon");
-      document.querySelectorAll(".footer-link")[2].classList.add("slideInRightIcon");
-    }
-  });
-});
+// const footerLinkObserver = new IntersectionObserver((entries) => {
+//   // If entry intersects then we will display project to user
+//   console.log("entries: ", entries);
+//   entries.forEach((entry) => {
+//     // If user reaches footer then give all three links fade in
+//     if (entry.isIntersecting) {
+//       document.querySelectorAll(".footer-link")[0].classList.add("slideInRightIcon");
+//       document.querySelectorAll(".footer-link")[1].classList.add("slideInRightIcon");
+//       document.querySelectorAll(".footer-link")[2].classList.add("slideInRightIcon");
+//     }
+//   });
+// });
 
-//Same as -> footerLinkObserver.observe(document.querySelector(".footer-link"));
-footerLinkObserver.observe(allFooterLinks);
+// //Same as -> footerLinkObserver.observe(document.querySelector(".footer-link"));
+// footerLinkObserver.observe(allFooterLinks);
