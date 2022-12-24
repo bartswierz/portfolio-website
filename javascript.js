@@ -20,42 +20,29 @@ window.onscroll = function () {
 /*****************************************************/
 //Fade In effect for projects when user intersects
 
+//Collecting all projects with class name 'project-section'
+const allProjects = document.querySelectorAll(".project-section");
+// console.log("My Projects: ", allProjects);
+
 //Observer for PROJECT #1 - Alpha Clothing
-const observerProjOne = new IntersectionObserver((entries) => {
+const projectObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    // If classes ARE INTERSECTING then we will ADD BACK IN fade class
+    // If entry intersects then we will display project to user
     if (entry.isIntersecting) {
-      document.querySelector(".animate-proj-1").classList.add("fadeInBottom");
+      //animate-proj-1 or animate-proj-2 or animate-proj-3
+      // console.log("entry: ", entry.target.classList[1]);
+
+      /*
+      entry.target.classList[1] === class="animate-proj-1 or 2 or 3"
+      in this query selector we are creating string literal for one of the three project sections -> 
+      (i.e. document.querySelector('.animate-proj-1') )
+      */
+      document.querySelector(`.${entry.target.classList[1]}`).classList.add("fadeInBottom");
     }
   });
 });
 
-observerProjOne.observe(document.querySelector(".animate-proj-1"));
-
-/*****************************************************/
-//Observer for PROJECT #2 - Bots For Hire
-const observerProjTwo = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log("entries: ", entries);
-
-    //If User intersects container, add animation
-    if (entry.isIntersecting) {
-      document.querySelector(".animate-proj-2").classList.add("fadeInBottom");
-    }
-  });
+//Observes ALL THREE PROJECT SECTIONS - 3 Projects total
+allProjects.forEach((project) => {
+  projectObserver.observe(project);
 });
-
-observerProjTwo.observe(document.querySelector(".animate-proj-2"));
-
-/*****************************************************/
-//Observer for PROJECT #3 - Pizza Bytes
-const observerProjThree = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    // If classes ARE INTERSECTING then we will ADD BACK IN fade class
-    if (entry.isIntersecting) {
-      document.querySelector(".animate-proj-3").classList.add("fadeInBottom");
-    }
-  });
-});
-
-observerProjThree.observe(document.querySelector(".animate-proj-3"));
