@@ -359,6 +359,9 @@ ul {
   margin: 0 auto;
   min-width: 100%;
   margin-bottom: 40rem;
+
+  /* stay hidden until user intersects */
+  opacity: 0;
 }
 
 .project-image {
@@ -569,6 +572,8 @@ ul {
   background-color: rgba(37, 40, 57, 1);
   border: 3px solid white;
   /* border: 3px solid #2aa0ec; */
+
+  opacity: 0;
 }
 
 .contact-header {
@@ -1042,8 +1047,11 @@ a {
   }
 
   /* Goes 50px PAST destination */
-  50% {
+  /* 50% {
     transform: translateY(-25px);
+  } */
+  50% {
+    transform: translateY(-15px);
   }
 
   /* 100% OF THE ANIMATION - COMPLETION */

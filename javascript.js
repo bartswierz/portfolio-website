@@ -19,6 +19,11 @@ window.onscroll = function () {
 
 /*****************************************************/
 //Fade In effect for projects when user intersects
+const intersectionOptions = {
+  root: null, // use the viewport
+  rootMargin: "0px",
+  threshold: 1,
+};
 
 //Collecting all projects with class name 'project-section'
 const allProjects = document.querySelectorAll(".project-section");
@@ -28,7 +33,8 @@ const allProjects = document.querySelectorAll(".project-section");
 const projectObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     // If entry intersects then we will display project to user
-    if (entry.isIntersecting) {
+    // if (entry.isIntersecting) {
+    if (entry.intersectionRatio >= 0.5) {
       //animate-proj-1 or animate-proj-2 or animate-proj-3
       // console.log("entry: ", entry.target.classList[1]);
 
@@ -37,16 +43,17 @@ const projectObserver = new IntersectionObserver((entries) => {
       in this query selector we are creating string literal for one of the three project sections -> 
       (i.e. document.querySelector('.animate-proj-1') )
       */
-      document.querySelector(`.${entry.target.classList[1]}`).classList.add("slideInBottom");
+      document.querySelector(`.${entry.target.classList[1]}`).classList.add("slideInBottom", "display");
     }
   });
-});
+}, intersectionOptions);
 
 //Observes ALL THREE PROJECT SECTIONS
 allProjects.forEach((project) => {
   projectObserver.observe(project);
 });
 
+//=== let target = document.querySelector('#listItem');
 const contactForm = document.querySelector(".contact-section");
 
 const contactFormObserver = new IntersectionObserver((entry) => {
@@ -55,12 +62,13 @@ const contactFormObserver = new IntersectionObserver((entry) => {
   if (entry[0].isIntersecting) {
     // document.querySelector(".contact-section").classList.add("fadeInBottom");
     // document.querySelector(".contact-section").classList.add("fadeInLeft");
-    document.querySelector(".contact-section").classList.add("slideInLeft");
+    document.querySelector(".contact-section").classList.add("slideInLeft", "display");
   }
-});
+}, intersectionOptions);
 
 //passing observer the div with class name 'contact-section'
 contactFormObserver.observe(contactForm);
+//===observer.observe(target);
 
 /*************************************************************/
 //Observes ALL THREE FOOTER LINKS
@@ -78,7 +86,7 @@ contactFormObserver.observe(contactForm);
 //       document.querySelectorAll(".footer-link")[2].classList.add("slideInRightIcon");
 //     }
 //   });
-// });
+// }, intersectionOptions);
 
 // //Same as -> footerLinkObserver.observe(document.querySelector(".footer-link"));
 // footerLinkObserver.observe(allFooterLinks);
