@@ -672,13 +672,13 @@ label {
 }
 
 .link-icon-container {
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 
 .link-icon-container:hover,
 .link-icon-container:active {
   color: #ffb700;
-  border: 2px solid #ffb700;
+  /* border: 2px solid #ffb700; */
   transition: 300ms ease-in-out;
 }
 
