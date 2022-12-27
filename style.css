@@ -150,9 +150,13 @@ ul {
   scroll-margin-top: 100px;
 }
 
-#projects,
+/* #projects, */
 #contact {
   scroll-margin-top: 100px;
+}
+
+#projects {
+  scroll-margin-top: 20px;
 }
 
 /*************************************************************************/
