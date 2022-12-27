@@ -22,7 +22,7 @@ window.onscroll = function () {
 const intersectionOptions = {
   root: null, // use the viewport
   rootMargin: "0px",
-  threshold: 0.9,
+  threshold: 1,
 };
 
 //Collecting all projects with class name 'project-section'
