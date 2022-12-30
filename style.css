@@ -373,16 +373,65 @@ ul {
   opacity: 0;
 }
 
-.project-image {
+.project-image-container {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   max-width: 80rem;
   border-radius: 20px;
   margin-bottom: 1.2rem;
   padding-left: 0;
   padding-right: 0;
-  /* border-bottom: 1px solid rgba(153, 153, 153, 0.59); */
 }
 
+.carousel {
+  /* max-width: 50rem; */
+}
+
+.carousel-inner {
+  position: relative;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  /* max-width: 75rem; */
+}
+
+/* CAROUSEL */
+.carousel-indicators {
+  position: absolute;
+  /* margin-top: 250px; */
+  top: 88%;
+  left: 0%;
+  right: 0%;
+  color: red;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #e3a812;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #e3a812;
+  background-color: #999;
+  border-radius: 50px;
+  border: 2px solid #777;
+  padding: 20px;
+  font-size: 5px;
+  /* font-size: 556px; */
+  /* overflow: hidden; */
+}
+
+.slider-arrow-icon {
+  /* font-size: 200px;
+  background-color: red;
+  padding: 100px; */
+}
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  border: 2px solid white;
+}
+
+/* overflow: hidden; */
 /* Project Text */
 .project-content {
   margin: 0 auto;
@@ -751,7 +800,8 @@ a {
     max-width: 76rem;
   }
 
-  .project-content {
+  .project-content,
+  .carousel {
     max-width: 75rem;
   }
 
@@ -788,8 +838,9 @@ a {
     max-width: 80vw;
   }
 
-  .project-content {
-    max-width: 80vw;
+  .project-content,
+  .carousel {
+    max-width: 81vw;
   }
 
   /* CONTACT FORM */
@@ -869,7 +920,8 @@ a {
     max-width: 95vw;
   }
 
-  .project-content {
+  .project-content,
+  .carousel {
     max-width: 95vw;
   }
 
@@ -993,7 +1045,8 @@ a {
     max-width: 93vw;
   }
 
-  .project-content {
+  .project-content,
+  .carousel {
     max-width: 93vw;
   }
 
@@ -1015,6 +1068,10 @@ a {
   }
   .section-header {
     margin-left: 0;
+  }
+
+  .carousel-indicators {
+    top: 83%;
   }
 }
 
