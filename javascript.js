@@ -1,4 +1,4 @@
-//Compare this value to new value, if user moves up then current value will be LESS than prevScrollPos and display navigation, else if user moves down then current will stay larger keeping navigation off the screen.
+//HIDE/DISPLAY NAVBAR - Compare this value to new value, if user moves up then current value will be LESS than prevScrollPos and display navigation, else if user moves down then current will stay larger keeping navigation off the screen.
 var prevScrollPos = window.pageYOffset;
 
 window.onscroll = function () {
