@@ -384,15 +384,23 @@ ul {
   padding-right: 0;
 }
 
-.carousel {
-  /* max-width: 50rem; */
-}
+/* .carousel-item { */
+/* max-width: 50rem; */
+/* min-height: 39rem; */
+/* } */
 
 .carousel-inner {
   position: relative;
   border-radius: 10px;
   /* overflow: hidden; */
   /* max-width: 75rem; */
+  /* height: 100%;
+  width: 100%; */
+}
+
+.carousel-item {
+  background-position: center;
+  object-fit: contain;
 }
 
 /* CAROUSEL */
