@@ -34,7 +34,8 @@ const projectObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     // If entry intersects then we will display project to user
     // if (entry.isIntersecting) {
-    if (entry.intersectionRatio >= 0.5) {
+
+    if (entry.intersectionRatio >= 0.3) {
       //animate-proj-1 or animate-proj-2 or animate-proj-3
       // console.log("entry: ", entry.target.classList[1]);
 
