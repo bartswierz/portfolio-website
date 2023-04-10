@@ -22,7 +22,7 @@ window.onscroll = function () {
 const intersectionOptions = {
   root: null, // use the viewport
   rootMargin: "0px",
-  threshold: 1,
+  threshold: 0.5,
 };
 
 //Collecting all projects with class name 'project-section'
@@ -34,7 +34,6 @@ const projectObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     // If entry intersects then we will display project to user
     // if (entry.isIntersecting) {
-
     if (entry.intersectionRatio >= 0.3) {
       //animate-proj-1 or animate-proj-2 or animate-proj-3
       // console.log("entry: ", entry.target.classList[1]);
@@ -54,6 +53,35 @@ allProjects.forEach((project) => {
   projectObserver.observe(project);
 });
 
+//WORK PROJECTS ----------
+//Collecting all projects with class name 'project-section'
+const allWorkProjects = document.querySelectorAll(".work-project-section");
+console.log("allWorkProjects: ", allWorkProjects);
+
+//Observer for PROJECT #1 - Alpha Clothing
+const workProjectObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    // If entry intersects then we will display project to user
+    // if (entry.isIntersecting) {
+    if (entry.intersectionRatio >= 0.3) {
+      //animate-proj-1 or animate-proj-2 or animate-proj-3
+      // console.log("entry: ", entry.target.classList[1]);
+
+      /*
+      entry.target.classList[1] === class="animate-proj-1 or 2 or 3"
+      in this query selector we are creating string literal for one of the three project sections -> 
+      (i.e. document.querySelector('.animate-proj-1') )
+      */
+      document.querySelector(`.${entry.target.classList[1]}`).classList.add("slideInBottom", "display");
+    }
+  });
+}, intersectionOptions);
+
+//Observes ALL THREE PROJECT SECTIONS
+allWorkProjects.forEach((project) => {
+  workProjectObserver.observe(project);
+});
+//-----------------------
 //=== let target = document.querySelector('#listItem');
 const contactForm = document.querySelector(".contact-section");
 
