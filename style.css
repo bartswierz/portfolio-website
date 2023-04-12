@@ -23,6 +23,7 @@ HOVER/ACTIVE
 html {
   /* 1 rem = 10px */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -55,6 +56,70 @@ ul {
   height: 0;
 }
 
+/* Style for the scrollbar  */
+::-webkit-scrollbar {
+  width: 15px; /* width of the scrollbar */
+}
+
+/* Style for the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #e3a812;
+  border-radius: 50px;
+}
+
+/* Style for the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: rgba(37, 40, 57);
+}
+
+/* Style for the scrollbar */
+::-moz-scrollbar {
+  width: 15px; /* width of the scrollbar */
+}
+
+/* Style for the scrollbar thumb */
+::-moz-scrollbar-thumb {
+  background-color: #e3a812;
+  border-radius: 50px;
+}
+
+/* Style for the scrollbar track */
+::-moz-scrollbar-track {
+  background-color: rgba(37, 40, 57);
+}
+
+/* Style for the scrollbar */
+::-ms-scrollbar {
+  width: 15px; /* width of the scrollbar */
+}
+
+/* Style for the scrollbar thumb */
+::-ms-scrollbar-thumb {
+  background-color: #e3a812;
+  border-radius: 50px;
+}
+
+/* Style for the scrollbar track */
+::-ms-scrollbar-track {
+  background-color: rgba(37, 40, 57);
+}
+
+/* Style for the scrollbar */
+::-o-scrollbar {
+  width: 15px; /* width of the scrollbar */
+}
+
+/* Style for the scrollbar thumb */
+::-o-scrollbar-thumb {
+  background-color: #e3a812;
+  border-radius: 50px;
+}
+
+/* Style for the scrollbar track */
+::-o-scrollbar-track {
+  background-color: rgba(37, 40, 57);
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -66,6 +131,7 @@ ul {
     background-position: 0% 50%;
   }
 }
+
 /* NAVIGATION SECTION */
 .navbar {
   color: white;
@@ -75,6 +141,7 @@ ul {
   z-index: 1;
   top: 0;
   width: 100vw;
+
   opacity: 100%;
 
   /* For navbar hiding(Scroll Down)/display(Scroll Up)  */
@@ -181,6 +248,10 @@ ul {
 
 #projects {
   scroll-margin-top: 20px;
+}
+
+#workprojects {
+  scroll-margin-top: 50px;
 }
 
 /*************************************************************************/
@@ -383,7 +454,8 @@ ul {
   font-family: "Goblin One", cursive;
 }
 
-.project-section {
+.project-section,
+.work-project-section {
   margin: 0 auto;
   min-width: 100%;
   margin-bottom: 40rem;
@@ -434,7 +506,27 @@ ul {
 .carousel-image {
   width: 100%;
   height: auto;
-  max-height: 535px;
+  /* max-height: 450px; */
+  /* max-height: 535px; */
+}
+
+.carousel-image-work-container {
+  max-width: 400px;
+  /* max-height: 500px; */
+  max-height: 400px;
+
+  overflow-y: scroll;
+}
+
+.carousel-image-work {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-work {
+  /* max-width: 420px; */
+  max-width: 400px;
+  position: relative;
 }
 /* .carousel-image {
   max-height: 400px;
@@ -492,9 +584,17 @@ ul {
   transform: scale(1);
 }
 
+.margin-right-15 {
+  margin-right: 15px;
+}
+
+.margin-left-15 {
+  margin-left: 15px;
+}
 /* overflow: hidden; */
 /* Project Text */
-.project-content {
+.project-content,
+.project-content-work {
   margin: 0 auto;
   color: black;
   padding: 1.2rem;
@@ -510,6 +610,10 @@ ul {
 
   /* FOR LAYOUT PURPOSES */
   /* border: 2px solid #2aa0ec; */
+}
+
+.project-content-work {
+  max-width: 70rem;
 }
 
 .project-heading {
@@ -563,6 +667,8 @@ ul {
 .tech-list {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   color: rgba(37, 40, 57, 1);
 }
@@ -899,9 +1005,22 @@ a {
     max-width: 80vw;
   }
 
+  /* .project-content,
+  .carousel {
+    max-width: 81vw;
+  } */
+
   .project-content,
   .carousel {
     max-width: 81vw;
+  }
+
+  .project-content-work {
+    max-width: 70vw;
+  }
+
+  .carousel-work {
+    max-width: 400px;
   }
 
   /* CONTACT FORM */
@@ -989,27 +1108,28 @@ a {
   }
 
   .project-content,
+  .project-content-work,
   .carousel {
     max-width: 92vw;
   }
 
-  .tech-list {
+  /* .tech-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
     justify-items: center;
     margin: 0 auto;
-  }
+  } */
 
-  .list-item:nth-child(1),
+  /* .list-item:nth-child(1),
   .list-item:nth-child(3) {
     justify-self: right;
-  }
+  } */
 
-  .list-item:nth-child(2),
+  /* .list-item:nth-child(2),
   .list-item:nth-child(4) {
     justify-self: left;
-  }
+  } */
 
   /* PROJECT BTNS */
   .project-btns {
@@ -1131,9 +1251,10 @@ a {
     width: 90%;
   }
 
-  .list-item {
+  /* .list-item {
     width: 70%;
-  }
+  } */
+
   .section-header {
     margin-left: 0;
   }
