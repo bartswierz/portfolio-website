@@ -250,6 +250,10 @@ ul {
   scroll-margin-top: 20px;
 }
 
+#workprojects {
+  scroll-margin-top: 50px;
+}
+
 /*************************************************************************/
 /* INTRODUCTION SECTION */
 .intro-section {
@@ -502,7 +506,7 @@ ul {
 .carousel-image {
   width: 100%;
   height: auto;
-  max-height: 450px;
+  /* max-height: 450px; */
   /* max-height: 535px; */
 }
 
