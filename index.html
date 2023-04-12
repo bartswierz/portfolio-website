@@ -65,7 +65,7 @@
     <!-- <div class="container">
       <embed src="files/Bartosz_Swierzynski_Resume.pdf" type="application/pdf" width="100%" height="600px" />
     </div> -->
-
+    <div>
     <!-- INTRODUCTION SECTION -->
     <div class="intro-section container fade-in">
       <!-- <div class="col col-md-8"> -->
@@ -122,12 +122,12 @@
     <h1 class="section-header" id="projects">Work Projects</h1>
     <!-- Project container IS FOR INTERSECTION OBSERVER FOR FADE  -->
     <div class="project-container" id="workprojects">
-      <div class="work-project-section animate-proj-1">
+      <div class="work-project-section animate-proj-4">
         <div class="container-fluid">
           <!-- Image -->
           <div class="project-image-container ">
             <!-- IMAGE CAROUSEL -->
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-work">
   
               <!-- Slider Bars -->
               <div class="carousel-indicators">
@@ -136,36 +136,57 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
                 <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 7"></button> -->
               </div>
   
-              <!-- TODO - Let image be 900 X 535 -->
               <!-- Image Container -->
               <div class="carousel-inner">
-                <div class="carousel-item active">  
-                  <img src="./img/alpha-footwear-product.png" class="d-block w-100 carousel-image" alt="Products Page">
+                <div class="carousel-item active"> 
+                  <div class="carousel-image-work-container">
+                    <img src="./img/civ-fft-screen1-400.png" class="d-block w-100 carousel-image-work" alt="Products Page">
+                  </div> 
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/alpha-footwear-homepage.png" class="d-block w-100 carousel-image" alt="Products Page">
+                  <div class="carousel-image-work-container">
+                    <img src="./img/civ-fft-screen2-400.png" class="d-block w-100 carousel-image-work" alt="Products Page">
+                  </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/alpha-footwear-signin.png" class="d-block w-100 carousel-image" alt="Signin Page">
+                  <div class="carousel-image-work-container">
+                    <img src="./img/civ-fft-screen3-400.png" class="d-block w-100 carousel-image-work" alt="Signin Page">
+                  </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/alpha-footwear-checkout.png" class="d-block w-100 carousel-image" alt="Checkout Page">
+                  <div class="carousel-image-work-container">
+                    <img src="./img/civ-fft-screen4-400.png" class="d-block w-100 carousel-image-work" alt="Checkout Page">
+                  </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/alpha-footwear-cart.png" class="d-block w-100 carousel-image" alt="Cart Page">
+                  <div class="carousel-image-work-container">
+                    <img src="./img/civ-fft-screen5-400.png" class="d-block w-100 carousel-image-work" alt="Cart Page">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-image-work-container">
+                    <img src="./img/civ-summary-page-400.png" class="d-block w-100 carousel-image-work" alt="Cart Page">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-image-work-container">
+                    <img src="./img/civ-login-screen.png" class="d-block w-100 carousel-image-work" alt="Cart Page">
+                  </div>
                 </div>
               </div>
   
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <button class="carousel-control-prev margin-left-15" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span aria-hidden="true"><ion-icon name="arrow-back-outline" class="arrow-back-outline"></ion-icon></span>
                 <span class="visually-hidden">Previous</span>
               </button>
   
               <!-- Next Slide Container -->
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <button class="carousel-control-next margin-right-15" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
                 <span aria-hidden="true"><ion-icon name="arrow-forward-outline" class="arrow-forward-outline"></ion-icon></span>
                 <span class="visually-hidden">Next</span>
@@ -177,7 +198,7 @@
             <!-- Text -->
             <!-- <div class="col col-md-6"> -->
             <div class="row">
-              <div class="project-content">
+              <div class="project-content-work">
                 <h1 class="project-heading">Civilience</h1>
                 <h2 class="project-subheading">Community Health Tracker App</h2>
                 <ul class="tech-list">
@@ -189,14 +210,14 @@
                   <li class="list-item">Context Hooks</li>          
                   <li class="list-item">Redux Hooks</li>          
                 </ul>
-                <p class="project-description">As a Front-end co-team lead, I collaborated closely with the UI/UX Design Team and Data Science team to help build a complex health tracker web application from scratch. The app is intended to be used by communities across the US to help them understand their emotional health.</p>
+                <p class="project-description">As a Front-end co-team lead at Civilience, I collaborated closely with the UI/UX Design Team and Data Science team to help build a complex health tracker web application from scratch. The app is intended to be used by communities across the US to help them understand their emotional health.</p>
                 <div class="project-btns">
                   <!-- OPEN LIVE SITE -->
                   <!-- <div class="project-content-btns"> -->
                     <a class="click-zone" href="https://www.civilience.app/" target="_blank"><button class="btn-site"><ion-icon name="open-outline" class="project-icon"></ion-icon>View App</button></a>
 
                     <!-- OPEN REPO CODE -->
-                    <a class="click-zone" href="https://www.civilience.social/solutions" target="_blank"><button class="btn-code"><ion-icon name="code-slash-outline" class="project-icon"></ion-icon>View Company Site</button></a>
+                    <a class="click-zone" href="https://www.civilience.social/" target="_blank"><button class="btn-code"><ion-icon name="code-slash-outline" class="project-icon"></ion-icon>View Company Site</button></a>
                     <!-- OPEN MODAL BUTTON -->
                       <button type="button" class="btn-description" data-bs-toggle="modal" data-bs-target="#projectModal1">
                         <ion-icon name="enter-outline" class="project-icon "></ion-icon>Project Description
@@ -645,6 +666,7 @@
         </div>
       </div>
     </div>
+    
    
     <!-- Our JS File -->
     <script src="./javascript.js"></script>
