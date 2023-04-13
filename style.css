@@ -1017,7 +1017,8 @@ a {
   }
 
   .project-content-work {
-    max-width: 70vw;
+    /* max-width: 70vw; */
+    max-width: 81vw;
   }
 
   .carousel-work {
@@ -1109,10 +1110,30 @@ a {
   }
 
   .project-content,
-  .project-content-work,
   .carousel {
     max-width: 92vw;
   }
+
+  .carousel.slide.carousel-work {
+    max-width: 400px;
+  }
+
+  .project-content-work {
+    max-width: 92vw;
+  }
+
+  /* .carousel-item.active {
+    max-width: 400px;
+  } */
+
+  /* .carousel-image-work,
+  .carousel-image-work-container {
+    max-width: 90vw;
+  } */
+  /* .project-content,
+  .project-content-work {
+    max-width: 92vw;
+  } */
 
   /* .tech-list {
     display: grid;
