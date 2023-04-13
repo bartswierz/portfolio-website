@@ -968,10 +968,10 @@ a {
     max-width: 76rem;
   }
 
-  .project-content,
+  /* .project-content,
   .carousel {
     max-width: 75rem;
-  }
+  } */
 
   .list-item {
     font-size: 1.2rem;
