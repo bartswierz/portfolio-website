@@ -445,7 +445,8 @@ ul {
 /* PROJECT SECTION */
 .section-header {
   text-align: center;
-  margin-top: 15rem;
+  /* margin-top: 15rem; */
+  margin-top: 30vh;
   margin-bottom: 5rem;
   /* Increase later */
   font-size: 3rem;
