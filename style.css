@@ -446,7 +446,7 @@ ul {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); */
   grid-template-columns: repeat(auto-fit, minmax(40px, 60px));
-  max-width: 70rem;
+  max-width: 80rem;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -464,8 +464,8 @@ ul {
   height: auto;
 }
 
-.technology-image {
-  width: 100%;
+img.technology-image {
+  /* width: 100%; */
   max-width: 60px;
   height: auto;
   opacity: 0;
