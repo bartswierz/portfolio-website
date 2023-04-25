@@ -446,6 +446,8 @@ ul {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); */
   grid-template-columns: repeat(auto-fit, minmax(60px, 60px));
+  max-width: 70rem;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   gap: 1rem;
