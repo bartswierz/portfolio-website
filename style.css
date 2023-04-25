@@ -442,7 +442,7 @@ ul {
 }
 
 /* HOLDS OUR TECHNOLOGIES LIST AS A GRID */
-.technologies-container {
+div.technologies-container {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); */
   grid-template-columns: repeat(auto-fit, minmax(60px, 60px));
@@ -454,7 +454,7 @@ ul {
   margin-top: 8vh;
 }
 
-.technology-image-container {
+div.technology-image-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
