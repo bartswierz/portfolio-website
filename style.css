@@ -460,9 +460,9 @@ ul {
   height: auto;
 }
 
-.technology-image {
+img.technology-image {
   width: 100%;
-  /* max-width: 60px; */
+  max-width: 60px;
   height: auto;
   opacity: 0;
   -webkit-animation-name: fadeInIcon;
