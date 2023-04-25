@@ -445,7 +445,7 @@ ul {
 .technologies-container {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); */
-  grid-template-columns: repeat(auto-fit, minmax(60px, 80px));
+  grid-template-columns: repeat(auto-fit, minmax(60px, 60px));
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -460,7 +460,7 @@ ul {
 
 .technology-image {
   width: 100%;
-  max-width: 80px;
+  max-width: 60px;
   height: auto;
   opacity: 0;
   -webkit-animation-name: fadeInIcon;
