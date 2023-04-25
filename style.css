@@ -456,6 +456,7 @@ ul {
 
 .technology-image-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 60px;
