@@ -885,6 +885,7 @@ img.technology-image {
 .modal-content {
   /* DARK THEME */
   background-color: rgba(37, 40, 57, 1);
+  min-height: 60vh;
 }
 
 .modal-title {
@@ -902,25 +903,74 @@ img.technology-image {
   color: white;
 }
 
-.modal-topic {
+/* .modal-topic {
+  font-size: 2rem;
+  font-weight: 600; */
+
+/* DARK THEME */
+/* color: #e3a812; */
+/* } */
+
+/* .modal-explanation {
+  font-size: 1.6rem;
+} */
+
+/* .modal-divider { */
+/* DARK THEME */
+/* border-bottom: 1px solid white; */
+
+/* LIGHT THEME */
+/* border-bottom: 1px solid rgba(49, 49, 49, 0.458); */
+/* margin-bottom: 1rem;
+} */
+
+/****************************************/
+/* ACCORDION SECTION */
+.accordion-button-text {
   font-size: 2rem;
   font-weight: 600;
-
-  /* DARK THEME */
-  color: #e3a812;
 }
 
-.modal-explanation {
+/* ACCORDION BUTTON - OPENED */
+.accordion-button:not(.collapsed) {
+  background-color: rgba(37, 40, 57, 1);
+  border: 1px solid #454545;
+
+  color: #e3a812;
+  box-shadow: none;
+}
+
+/* ACCORDION BUTTON - CLOSED */
+.accordion-button.collapsed {
+  border: 1px solid #454545;
+  color: #e3a812;
+  background-color: rgba(37, 40, 57, 1);
+}
+
+/* Highlights CLICKED DROPDOWN MENU */
+button.accordion-button:focus:not(:focus-visible) {
+  border: 1px solid #e3a812;
+}
+
+.accordion {
+  /* Increase dropdown icon size */
+  --bs-accordion-btn-icon-width: 2.25rem;
+  /* Change url link for arrow icon color to stay consistent on open and close */
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230a58ca'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+  background-color: rgba(37, 40, 57, 1);
+  color: white;
   font-size: 1.6rem;
 }
-.modal-divider {
-  /* DARK THEME */
-  border-bottom: 1px solid white;
 
-  /* LIGHT THEME */
-  /* border-bottom: 1px solid rgba(49, 49, 49, 0.458); */
-  margin-bottom: 1rem;
+/* Remove clipped white background upon opening animation */
+.accordion-item:last-of-type .accordion-collapse {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
+/****************************************/
 
 .features-list {
   display: flex;
