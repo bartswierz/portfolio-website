@@ -632,25 +632,75 @@
                         <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                       </div>
                       <div class="modal-body">
-                        <div class="modal-divider">
-                          <h2 class="modal-topic">Project Description</h2>
-                          <p class="modal-explanation">Employers can browse the endless amount of artificial intelligence for hire making the whole hiring process quick and easy. The program utilizes API fetches to grab employee information containing: Name, job title, key skill, email, phone number, and location. Each time User clicks the "Find Bots" button, there will be a fetch request to grab four new users and render them on screen for the user. There is also an option to limit the number of rendered users by utilizing the text box and inputting a number between 1 and 4. </p>
+                        <!-- Section #1 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProjTwoBtnOne" aria-expanded="true" aria-controls="collapseProjTwoBtnOne">
+                                <span class="accordion-button-text">Project Description</span> 
+                              </button>
+                            </h2>
+                            <div id="collapseProjTwoBtnOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                Employers can browse the endless amount of artificial intelligence for hire making the whole hiring process quick and easy. The program utilizes API fetches to grab employee information containing: Name, job title, key skill, email, phone number, and location. Each time the user clicks the "Find Bots" button, there will be a fetch request to grab nine new users which we will then use to render them on screen.
+                              </div> 
+                            </div>
+                          </div>
                         </div>
-                        <div class="modal-divider">
-                          <h2 class="modal-topic">Why did I build this project?</h2>
-                          <p class="modal-explanation">I built this project to get a stronger grasp on React. I have designed this project in a way that will allow me to continously add new features. These new features will be those that can be used for various kinds of projects, I'm specfically trying to add new features that would commonly be seen on e-commerce sites. This project is the perfect amount of beginner friendly while leaving room for advanced features as my skills improve. I have been having a blast creating this project and look forward to continously add more to it.</p>
+
+                        <!-- Section #2 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProjTwoBtnTwo" aria-expanded="true" aria-controls="collapseProjTwoBtnTwo">
+                                <span class="accordion-button-text">Why did I build this project?</span> 
+                              </button>
+                            </h2>
+                            <div id="collapseProjTwoBtnTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                I built this project to get a stronger grasp on React. I have designed this project in a way that will allow me to continously add new features. These new features will be those that can be used for various kinds of projects, I'm specfically trying to add new features that would commonly be seen on e-commerce sites. This project is the perfect amount of beginner friendly while leaving room for advanced features as my skills improve. I have been having a blast creating this project and look forward to continously add more to it.
+                              </div> 
+                            </div>
+                          </div>
                         </div>
-                        <div class="modal-divider">
-                          <h2 class="modal-topic">Build Difficulties?</h2>
-                          <p class="modal-explanation">Understanding how to properly pass state through components has had its ups and downs but also led me to beneficial resources with methods to make my roadblocks quick and painless. In the beginning, it was fairly straightforward to follow the logic, as my app grew, it was made clear that I needed to find strategies to properly maintain state for occasions when multiple components relied on the same state. This has led me to learning useContext has been great at passing state between components. Nesting components with one another had given me a few roadblocks but it was fun to solve where I was going wrong. Each roadblock pointed me towards great resources that I will use for my future projects.</p>
+
+                        <!-- Section #3 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProjTwoBtnThree" aria-expanded="true" aria-controls="collapseProjTwoBtnThree">
+                                <span class="accordion-button-text">Build Difficulties?</span> 
+                              </button>
+                            </h2>
+                            <div id="collapseProjTwoBtnThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                Understanding how to properly pass state through components has had its ups and downs but also led me to beneficial resources with methods to make my roadblocks quick and painless. In the beginning, it was fairly straightforward to follow the logic, as my app grew, it was made clear that I needed to find strategies to properly maintain state for occasions when multiple components relied on the same state. This has led me to learning useContext has been great at passing state between components. Nesting components with one another had given me a few roadblocks but it was fun to solve where I was going wrong. Each roadblock pointed me towards great resources that I will use for my future projects.
+                              </div> 
+                            </div>
+                          </div>
                         </div>
-                        <h2 class="modal-topic">Future Features: </h2>
-                          <ul class="features-list">
-                            <li><ion-icon name="construct-outline" class="features-icon"></ion-icon> Save employees to be viewed in a list.</li>
-                            <li><ion-icon name="construct-outline" class="features-icon"></ion-icon> Dynamically change card button text when clicked.</li>
-                            <li><ion-icon name="construct-outline" class="features-icon"></ion-icon> Close icon located on card to remove that card from the screen.</li>
-                            <li><ion-icon name="construct-outline" class="features-icon"></ion-icon> Add a "Build-a-Bot" feature that will allow users to create their own.</li>
-                          </ul>
+          
+                        <!-- Section #4 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProjTwoBtnFour" aria-expanded="true" aria-controls="collapseProjTwoBtnFour">
+                                <span class="accordion-button-text">Future Features</span> 
+                              </button>
+                            </h2>
+                            <div id="collapseProjTwoBtnFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <ul class="features-list">
+                                  <li><ion-icon name="construct-outline" class="features-icon"></ion-icon> Save employees to be viewed in a list.</li>
+                                  <li><ion-icon name="construct-outline" class="features-icon"></ion-icon> Dynamically change card button text when clicked.</li>
+                                  <li><ion-icon name="construct-outline" class="features-icon"></ion-icon> Close icon located on card to remove that card from the screen.</li>
+                                  <li><ion-icon name="construct-outline" class="features-icon"></ion-icon> Add a "Build-a-Bot" feature that will allow users to create their own.</li>
+                                </ul>
+                              </div> 
+                            </div>
+                          </div>
+                        </div>
+
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="modal-close" data-bs-dismiss="modal"><ion-icon name="exit-outline" class="project-icon"></ion-icon>Close</button>
