@@ -792,24 +792,80 @@
                         <h1 class="modal-title" id="exampleModalLabel">Project Overview</h1>
                       </div>
                       <div class="modal-body">
-                        <div class="modal-divider">
-                          <h2 class="modal-topic">Project Description</h2>
-                          <p class="modal-explanation">User can browse the wide range of items and add them to their cart. User must select an option for all form sections to add the item to their order. Program will alert the user to fill out all information if they don't. Each item added to order will update the current total displayed and update the "View Order" modal window. The modal window displays the item description, sub total, tax, and total cost. User has the option to close the modal window or submit their order. A order submission will be greeted with a second modal window notifying the customer that the order has been submitted successfully. User has the option to start a new order after submission which will do a global reset  </p>
+                        <!-- Section #1 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProjThreeBtnOne" aria-expanded="true" aria-controls="collapseProjThreeBtnOne">
+                                <span class="accordion-button-text">Project Description</span> 
+                              </button>
+                            </h2>
+                            <div id="collapseProjThreeBtnOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                User can browse the wide range of items and add them to their cart. User must select an option for all form sections to add the item to their order. Program will alert the user to fill out all information if they don't. Each item added to order will update the current total displayed and update the "View Order" modal window. The modal window displays the item description, sub total, tax, and total cost. User has the option to close the modal window or submit their order. A order submission will be greeted with a second modal window notifying the customer that the order has been submitted successfully. User has the option to start a new order after submission which will do a global reset
+                              </div> 
+                            </div>
+                          </div>
                         </div>
-                        <div class="modal-divider">
-                          <h2 class="modal-topic">Why did I build this project?</h2>
-                          <p class="modal-explanation">I built this project for learning experience. I wanted to make a challenging project that would allow me to continously add more features to it as my skills improve. This project allows me to get as close to a real world project as possible. I learned so much after implementing a few of the features into this project and I'm excited to see where it takes me a few months from now.</p>
+
+                        <!-- Section #2 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProjThreeBtnTwo" aria-expanded="true" aria-controls="collapseProjThreeBtnTwo">
+                                <span class="accordion-button-text">Why did I build this project?</span> 
+                              </button>
+                            </h2>
+                            <div id="collapseProjThreeBtnTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                I built this project for learning experience. I wanted to make a challenging project that would allow me to continously add more features to it as my skills improve. This project allows me to get as close to a real world project as possible. I learned so much after implementing a few of the features into this project and I'm excited to see where it takes me a few months from now.
+                              </div> 
+                            </div>
+                          </div>
                         </div>
-                        <div class="modal-divider">
-                          <h2 class="modal-topic">Build Difficulties?</h2>
-                          <p class="modal-explanation">Implementing a nested modal window to display the current order. This became our first real challenge as I was still getting familiar with utilizing bootstrap components. It took a bit of time to think about how I wanted to add the order list and a second modal window to display the order submission. Luckily, the bootstrap documentation is very thorough and easy to read, I was able to come up with a clean layout.</p>
+
+                        <!-- Section #3 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProjThreeBtnThree" aria-expanded="true" aria-controls="collapseProjThreeBtnThree">
+                                <span class="accordion-button-text">Build Difficulties?</span> 
+                              </button>
+                            </h2>
+                            <div id="collapseProjThreeBtnThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                Implementing a nested modal window to display the current order. This became our first real challenge as I was still getting familiar with utilizing bootstrap components. It took a bit of time to think about how I wanted to add the order list and a second modal window to display the order submission. Luckily, the bootstrap documentation is very thorough and easy to read, I was able to come up with a clean layout.
+                              </div> 
+                            </div>
+                          </div>
                         </div>
-                        <h2 class="modal-topic">Future Features: </h2>
+
+                        <!-- Section #4 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProjThreeBtnFour" aria-expanded="true" aria-controls="collapseProjThreeBtnFour">
+                                <span class="accordion-button-text">Future Features</span> 
+                              </button>
+                            </h2>
+                            <div id="collapseProjThreeBtnFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <ul class="features-list">
+                                  <li><ion-icon name="construct-outline" class="features-icon"></ion-icon> Remove item from order</li>
+                                  <li><ion-icon name="construct-outline" class="features-icon"></ion-icon> Discount for certain items based on current day of the week</li>
+                                  <li><ion-icon name="construct-outline" class="features-icon"></ion-icon> Create an account</li>
+                                </ul>
+                              </div> 
+                            </div>
+                          </div>
+                        </div>
+     
+                        <!-- <h2 class="modal-topic">Future Features: </h2>
                           <ul class="features-list">
                             <li><ion-icon name="construct-outline" class="features-icon"></ion-icon> Remove item from order</li>
                             <li><ion-icon name="construct-outline" class="features-icon"></ion-icon> Discount for certain items based on current day of the week</li>
                             <li><ion-icon name="construct-outline" class="features-icon"></ion-icon> Create an account</li>
-                          </ul>
+                          </ul> -->
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="modal-close" data-bs-dismiss="modal"><ion-icon name="exit-outline" class="project-icon"></ion-icon>Close</button>
