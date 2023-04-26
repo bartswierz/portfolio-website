@@ -885,7 +885,8 @@ img.technology-image {
 .modal-content {
   /* DARK THEME */
   background-color: rgba(37, 40, 57, 1);
-  min-height: 60vh;
+  /* min-height: 60vh; */
+  min-height: 60rem;
 }
 
 .modal-title {
