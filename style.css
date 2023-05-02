@@ -491,7 +491,7 @@ img.technology-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
   font-weight: bold;
 
   opacity: 0;
@@ -1358,9 +1358,14 @@ a {
     justify-items: center;
   }
 
+  /* .technology-name {
+
+  } */
   .center {
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 0;
   }
 }
 
