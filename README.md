@@ -14,10 +14,12 @@ The website is primarily built using:
 
 The website has been designed to display my work in a structured and visually appealing manner. It includes:
 
-- **Home**: A brief introduction about me and what I do.
-- **Projects**: A showcase of my frontend and full-stack projects. Each project includes a brief description, the technologies used, and links to the live site and the source code.
+- **Introduction**: A brief introduction about me and what I do.
+- **About Me**: A brief detailed description about me, my skills, and my experience.
+- **Work Projects**: A showcase of my full-stack project I helped develop requiring cross-team collaboration with UI/UX Design Team and the Data Science Team. The technologies used for the application are available and a link to view and access to the live app. 
+- **Projects**: A showcase of my frontend and full-stack projects. Each project includes a brief description, the technologies used, and links to the live site and the source code. I routinely update and swap out some older projects to better display my current skillset as a developer.
 - **About Me**: More detailed information about me, my skills, and my experience.
-- **Contact**: A form that visitors can use to get in touch with me. 
+- **Contact**: A contact form viewers can use to send me a quick message via email.
 
 ## Visit Site
 
