@@ -9,6 +9,7 @@ The website is primarily built using:
 - HTML5
 - CSS3
 - JavaScript
+- Bootstrap
 
 ## Features
 
