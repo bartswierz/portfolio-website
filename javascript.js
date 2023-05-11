@@ -7,7 +7,7 @@ window.onscroll = function () {
   // console.log("current", currentScrollPos);
 
   if (prevScrollPos > currentScrollPos) {
-    //User Scrolled UP
+    //User Scrolled Up - Display Navbar
     document.getElementById("my-navbar").style.top = "0";
   } else {
     // User Scrolled DOWN - 67.25px is current navbar height
@@ -27,7 +27,7 @@ const intersectionOptions = {
 
 //Collecting all projects with class name 'project-section'
 const allProjects = document.querySelectorAll(".project-section");
-// console.log("My Projects: ", allProjects);
+console.log("My Projects: ", allProjects);
 
 //Observer for PROJECT #1 - Alpha Clothing
 const projectObserver = new IntersectionObserver((entries) => {
