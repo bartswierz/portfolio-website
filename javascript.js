@@ -22,7 +22,7 @@ window.onscroll = function () {
 const intersectionOptions = {
   root: null, // use the viewport
   rootMargin: "0px",
-  threshold: 0.3,
+  threshold: 0.1,
 };
 
 //Collecting all projects with class name 'project-section'
@@ -34,7 +34,7 @@ const projectObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     // If entry intersects then we will display project to user
     // if (entry.isIntersecting) {
-    if (entry.intersectionRatio >= 0.3) {
+    if (entry.intersectionRatio >= 0.1) {
       //animate-proj-1 or animate-proj-2 or animate-proj-3
       // console.log("entry: ", entry.target.classList[1]);
 
@@ -63,7 +63,7 @@ const workProjectObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     // If entry intersects then we will display project to user
     // if (entry.isIntersecting) {
-    if (entry.intersectionRatio >= 0.3) {
+    if (entry.intersectionRatio >= 0.1) {
       //animate-proj-1 or animate-proj-2 or animate-proj-3
       // console.log("entry: ", entry.target.classList[1]);
 
