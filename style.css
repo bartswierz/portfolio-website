@@ -258,9 +258,86 @@ ul {
 /*************************************************************************/
 /* INTRODUCTION SECTION */
 .intro-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+.intro-section-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin-top: 14%;
-  min-height: 80rem;
+  flex: 1 1 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0px;
+  /* border: 2px solid #0028ff; */
+}
+
+/* ARROW ANIMATION DELAY */
+.dropdown-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f8b715;
+  background-color: rgba(37, 40, 57);
+  border-radius: 50%;
+}
+
+.arrow-link {
+  position: absolute;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  background-color: rgba(37, 40, 57);
+  border: 2px solid #f8b715;
+  bottom: 6%;
+  left: 47%;
+  -webkit-animation: pulse-animation 2s infinite;
+  -ms-animation: pulse-animation 2s infinite;
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.arrow-link:hover {
+  border: 2px solid #0072fe;
+  transition: all 0.3s ease 0s;
+}
+
+.dropdown-icon {
+  fill: #0072fe;
+  width: 3rem;
+  height: 3rem;
+}
+
+.dropdown-icon:hover {
+  fill: #ffb700; /* Set the color of the chevron icon */
+  transition: all 0.3s ease 0s;
 }
 
 .intro-heading {
@@ -1232,8 +1309,8 @@ a {
 
 /* STOPPED HERE AT 768px */
 @media (max-width: 768px) {
-  .intro-section {
-    margin-top: 22%;
+  .arrow-link {
+    left: 44%;
   }
 
   /* PROJECT SECTION */
@@ -1270,11 +1347,6 @@ a {
 
 @media (max-width: 576px) {
   /* INTRO SECTION */
-  .intro-section {
-    min-height: 75rem;
-    padding-top: 11vh;
-  }
-
   .intro-heading {
     font-size: 3.2rem;
   }
@@ -1343,12 +1415,6 @@ a {
     width: 65%;
   }
 
-  .technologies-container {
-    /* auto-fit creates as many columns as it can fit within these parameters */
-    /* grid-template-columns: repeat(auto, minmax(30px, 40px)); */
-    /* column-gap: 2rem; */
-  }
-
   img.technology-image {
     max-width: 40px;
     justify-self: center;
@@ -1358,9 +1424,6 @@ a {
     justify-items: center;
   }
 
-  /* .technology-name {
-
-  } */
   .center {
     display: flex;
     justify-content: center;
@@ -1370,9 +1433,12 @@ a {
 }
 
 @media (max-width: 475px) {
-  .intro-section {
-    margin-top: 30%;
+  .arrow-link {
+    left: 42%;
+    height: 4rem;
+    width: 4rem;
   }
+
   .intro-heading {
     font-size: 2.6rem;
   }
@@ -1420,10 +1486,6 @@ a {
 }
 
 @media (max-width: 375px) {
-  .intro-section {
-    margin-top: 35%;
-  }
-
   .intro-heading {
     font-size: 2rem;
   }
@@ -1465,10 +1527,6 @@ a {
   a.click-zone {
     width: 90%;
   }
-
-  /* .list-item {
-    width: 70%;
-  } */
 
   .section-header {
     margin-left: 0;
