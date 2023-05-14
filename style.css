@@ -1243,10 +1243,6 @@ a {
 }
 
 @media screen and (max-width: 991px) and (orientation: landscape) {
-  .intro-section {
-    border: 2px solid #0028ff;
-  }
-
   .intro-heading {
     font-size: 3.2rem;
   }
