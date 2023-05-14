@@ -239,12 +239,12 @@ ul {
 
 #about {
   /* scroll-margin-top: 300px; */
-  scroll-margin-top: 100px;
+  scroll-margin-top: 15px;
 }
 
 /* #projects, */
 #contact {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 15px;
 }
 
 #projects {
@@ -252,7 +252,7 @@ ul {
 }
 
 #workprojects {
-  scroll-margin-top: 50px;
+  scroll-margin-top: 15px;
 }
 
 /*************************************************************************/
@@ -262,7 +262,7 @@ ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 
 .intro-section-content {
@@ -300,7 +300,7 @@ ul {
   width: 5rem;
   background-color: rgba(37, 40, 57);
   border: 2px solid #f8b715;
-  bottom: 14%;
+  bottom: 2%;
   left: 47%;
   -webkit-animation: pulse-animation 2s infinite;
   -ms-animation: pulse-animation 2s infinite;
@@ -638,33 +638,6 @@ img.technology-image {
 .technology-image:nth-child(1) {
   animation-delay: 1s;
 }
-/* .technology-image:nth-child(2) {
-  animation-delay: 3s;
-}
-.technology-image:nth-child(3) {
-  animation-delay: 4s;
-}
-.technology-image:nth-child(4) {
-  animation-delay: 5s;
-}
-.technology-image:nth-child(5) {
-  animation-delay: 6s;
-}
-.technology-image:nth-child(6) {
-  animation-delay: 7s;
-}
-.technology-image:nth-child(7) {
-  animation-delay: 8s;
-}
-.technology-image:nth-child(8) {
-  animation-delay: 9s;
-}
-.technology-image:nth-child(9) {
-  animation-delay: 10s;
-}
-.technology-image:nth-child(10) {
-  animation-delay: 11s;
-} */
 
 /*************************************************************************/
 /* PROJECT SECTION */
@@ -1269,6 +1242,33 @@ a {
   }
 }
 
+@media screen and (max-width: 991px) and (orientation: landscape) {
+  .intro-section {
+    border: 2px solid #0028ff;
+  }
+
+  .intro-heading {
+    font-size: 3.2rem;
+  }
+
+  .intro-description {
+    margin-top: 1rem;
+  }
+
+  .intro-subheading {
+    font-size: 2rem;
+  }
+
+  .intro-subheading-2 {
+    font-size: 1.6rem;
+  }
+
+  .arrow-link {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
 @media (max-width: 992px) {
   .about-header {
     font-size: 3.6rem;
@@ -1488,7 +1488,7 @@ a {
 
 @media (max-width: 375px) {
   .intro-heading {
-    font-size: 2rem;
+    font-size: 3.2rem;
   }
 
   .intro-subheading {
