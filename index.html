@@ -543,28 +543,272 @@
     <h1 class="section-header" id="projects">My Projects</h1>
     <!-- Project container IS FOR INTERSECTION OBSERVER FOR FADE  -->
     <div class="project-container">
-      <!-- <div class="project-section animate-proj-1"> -->
-      <div class="project-section animate-proj-1">
+      <!-- NEXT.JS APP - NEXT-LEVEL GAMES -->
+      <div class="project-section animate-proj-6">
         <div class="container-fluid">
           <!-- Image -->
           <div class="project-image-container">
             <!-- IMAGE CAROUSEL -->
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="carouselExampleIndicators6" class="carousel slide">
               <!-- Slider Bars -->
               <div class="carousel-indicators">
                 <button
                   type="button"
-                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-target="#carouselExampleIndicators6"
                   data-bs-slide-to="0"
                   class="active"
                   aria-current="true"
                   aria-label="Slide 1"
                 ></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 7"></button> -->
+              </div>
+
+              <!-- TODO - Let image be 900 X 535 -->
+              <!-- Image Container -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/NLG-browse-genre.png" class="d-block w-100 carousel-image" alt="Game Genre Page" />
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/NLG-homepage.png" class="d-block w-100 carousel-image" alt="Products Page" />
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/NLG-browse-platforms.png" class="d-block w-100 carousel-image" alt="Signin Page" />
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/NLG-genres.png" class="d-block w-100 carousel-image" alt="Checkout Page" />
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/NLG-platforms.png" class="d-block w-100 carousel-image" alt="Cart Page" />
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide="prev">
+                <span aria-hidden="true"><ion-icon name="arrow-back-outline" class="arrow-back-outline"></ion-icon></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <!-- Next Slide Container -->
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <span aria-hidden="true"><ion-icon name="arrow-forward-outline" class="arrow-forward-outline"></ion-icon></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- End of Image Carousel -->
+
+          <!-- Text -->
+          <!-- <div class="col col-md-6"> -->
+          <div class="row">
+            <div class="project-content">
+              <h1 class="project-heading">Next-Level Games</h1>
+              <h2 class="project-subheading">Next.js Game Information Web Application</h2>
+              <ul class="tech-list">
+                <li class="list-item">Next.js</li>
+                <li class="list-item">TypeScript</li>
+                <li class="list-item">Tailwind CSS</li>
+                <li class="list-item">Postman</li>
+                <li class="list-item">Shadcn</li>
+              </ul>
+              <!-- <p class="project-description">High quality footwear at an affordable price.</p> -->
+              <p class="project-description">
+                Discover an expansive world of gaming with our game information web application with access to over 850,000+ games. The web application is built on Next.js with frequently updated data fetched via API from RAWG API. 
+              </p>
+              <div class="project-btns">
+                <!-- OPEN LIVE SITE -->
+                <a class="click-zone" href="https://alpha-footwear.netlify.app/" target="_blank"
+                  ><button class="btn-site"><ion-icon name="open-outline" class="project-icon"></ion-icon>View Site</button></a
+                >
+                <!-- OPEN REPO CODE -->
+                <a class="click-zone" href="https://github.com/bartswierz/shopping-website" target="_blank"
+                  ><button class="btn-code"><ion-icon name="code-slash-outline" class="project-icon"></ion-icon>View Code</button></a
+                >
+                <!-- OPEN MODAL BUTTON -->
+                <button type="button" class="btn-description" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                  <ion-icon name="enter-outline" class="project-icon"></ion-icon>Project Description
+                </button>
+                <!-- MODAL CONTENT -->
+                <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel">Project Overview</h1>
+                      </div>
+                      <!-- HOLDS OUR ENTIRE MODAL WINDOW CONTENT -->
+                      <div class="modal-body">
+                        <!-- Section #1 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseProjSixBtnOne"
+                                aria-expanded="true"
+                                aria-controls="collapseProjSixBtnOne"
+                              >
+                                <span class="accordion-button-text">Project Description</span>
+                              </button>
+                            </h2>
+                            <div id="collapseProjSixBtnOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                Alpha Footwear is the solution for getting top quality footwear without breaking the bank. Customers
+                                will enjoy and appreciate a minimalist layout without overwhelming distractions cluttering the screen.
+                                The user experience was the push for keeping the layout as minimal as possible without compromising
+                                other sections.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Section #2 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseProjSixBtnTwo"
+                                aria-expanded="true"
+                                aria-controls="collapseProjSixBtnTwo"
+                              >
+                                <span class="accordion-button-text">Why did I build this project?</span>
+                              </button>
+                            </h2>
+                            <div id="collapseProjSixBtnTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                I built this project to challenge myself by creating a large e-commerce app. My previous
+                                project(Bots-for-hire) helped get a basic understanding of React which allowed me to set the bar higher
+                                this time around and push myself to create a scalable React App. Going into the project, I have planned
+                                to update this project as I learn new technologies. I built the majority of my app quickly within a
+                                span of two-three weeks before starting my Frontend Internship in January(2023). Since then I have been
+                                learning TypeScript and Material UI which have been really enjoyable to learn. I have grown to love
+                                TypeScript after a short period of time and while I am still learning, I plan to use TypeScript for all
+                                my future projects because of how helpful it has been to help catch and prevent difficult bugs during
+                                development.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Section #3 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseProjSixBtnThree"
+                                aria-expanded="true"
+                                aria-controls="collapseProjSixBtnThree"
+                              >
+                                <span class="accordion-button-text">Build Difficulties?</span>
+                              </button>
+                            </h2>
+                            <div id="collapseProjSixBtnThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                The difficultly with this project came down to learning new technologies and implementing them as I
+                                improved. I built this project shortly after completing my React Udemy course and tested myself by
+                                putting everything I had learned to use. Learning multiple technologies at once made it a bit more
+                                difficult requiring reading a lot of documentation but it turned out to be enjoyable and very
+                                beneficial. I learned more about Firebase, Material UI, and recently, TypeScript. Implementing
+                                TypeScript into my application after already doing the majority of it with JavaScript proved to have
+                                its challenges as the change gave me many errors upon changing. However, learning the basics first
+                                helped me resolve my errors and turned out to be enjoyable converting my project. What really helped me
+                                was using my previous classroom experience working with Java. Java being a strongly typed language,
+                                made learning the syntax of TypeScript easier to understand. Overall, I enjoyed using TypeScript and
+                                plan to use it for all my future projects because of how useful it can be during development and
+                                refactoring code.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Section #3 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseProjSixBtnFour"
+                                aria-expanded="true"
+                                aria-controls="collapseProjSixBtnFour"
+                              >
+                                <span class="accordion-button-text">Future Features</span>
+                              </button>
+                            </h2>
+                            <div id="collapseProjSixBtnFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <ul class="features-list">
+                                  <li>
+                                    <ion-icon name="construct-outline" class="features-icon"></ion-icon> Update Product Card Mobile
+                                    Design
+                                  </li>
+                                  <li>
+                                    <ion-icon name="construct-outline" class="features-icon"></ion-icon> Flesh out the
+                                    Shipping/Checkout section
+                                  </li>
+                                  <li>
+                                    <ion-icon name="construct-outline" class="features-icon"></ion-icon> Update Size and Color Select
+                                    in Product Card
+                                  </li>
+                                  <li>
+                                    <ion-icon name="construct-outline" class="features-icon"></ion-icon> Add Unit Tests using Jest
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="modal-close" data-bs-dismiss="modal">
+                          <ion-icon name="exit-outline" class="project-icon"></ion-icon>Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END OF MODAL -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF NEXT.JS APP -->
+
+      <!-- ALPHA FOOTWEAR APP -->
+      <div class="project-section animate-proj-1">
+        <div class="container-fluid">
+          <!-- Image -->
+          <div class="project-image-container">
+            <!-- IMAGE CAROUSEL -->
+            <div id="carouselExampleIndicators1" class="carousel slide">
+              <!-- Slider Bars -->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators1"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <!-- <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="7" aria-label="Slide 7"></button> -->
               </div>
 
               <!-- TODO - Let image be 900 X 535 -->
@@ -587,13 +831,13 @@
                 </div>
               </div>
 
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
                 <span aria-hidden="true"><ion-icon name="arrow-back-outline" class="arrow-back-outline"></ion-icon></span>
                 <span class="visually-hidden">Previous</span>
               </button>
 
               <!-- Next Slide Container -->
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
                 <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
                 <span aria-hidden="true"><ion-icon name="arrow-forward-outline" class="arrow-forward-outline"></ion-icon></span>
                 <span class="visually-hidden">Next</span>
