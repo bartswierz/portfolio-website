@@ -29,8 +29,9 @@ html {
 
 body {
   /* font-family: "Roboto", sans-serif; */
-  font-family: "Roboto Slab", sans-serif;
+  /* font-family: "Roboto Slab", sans-serif; */
   /* font-family: "League Spartan", sans-serif; */
+  font-family: "Poppins", sans-serif;
   /* 1 rem = 10px */
   color: white;
 
@@ -152,7 +153,7 @@ ul {
 .navbar-brand {
   color: #e3a812;
   font-size: 3.4rem;
-  font-family: "Goblin One", cursive;
+  font-weight: bolder;
 }
 
 .navbar-brand:link,
@@ -502,7 +503,8 @@ ul {
   text-align: center;
   font-size: 4rem;
   color: white;
-  font-family: "Goblin One", cursive;
+  font-weight: bold;
+  /* font-family: "Goblin One", cursive; */
 }
 
 .about-description {
@@ -642,7 +644,7 @@ img.technology-image {
 
   color: white;
   margin-left: 3rem;
-  font-family: "Goblin One", cursive;
+  font-weight: bold;
 }
 
 .project-section,
@@ -763,7 +765,7 @@ img.technology-image {
 
 .project-heading {
   font-size: 2.6rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 0.8rem;
   text-align: center;
   line-height: 1.8rem;
   color: white;
@@ -809,6 +811,7 @@ img.technology-image {
   min-width: 8.6rem;
   background-color: #ffc400e8;
   text-align: center;
+  vertical-align: middle;
   border: 0px solid white;
 
   padding: 0.4rem 2rem 0.4rem 2rem;
