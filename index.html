@@ -1019,6 +1019,215 @@
       </div>
 
       <!-- PROJECT #5 - MERN STACK -->
+      <div class="project-section animate-proj-7">
+        <div class="container-fluid">
+          <!-- Image -->
+          <div class="project-image-container">
+            <!-- IMAGE CAROUSEL -->
+            <div id="carouselExampleIndicators7" class="carousel slide">
+              <!-- Slider Bars -->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators7"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+
+              <!-- Image Container -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/trailhawk_search.png"
+                    class="d-block w-100"
+                    alt="Map search displaying overhead view of a nature trail"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/trailhawk_modal.png" class="d-block w-100" alt="Modal Screen" />
+                </div>
+              </div>
+
+              <!-- Previous Slide Container -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide="prev">
+                <span aria-hidden="true"><ion-icon name="arrow-back-outline" class="arrow-back-outline"></ion-icon></span>
+                <span class="visually-hidden slider-arrow-icon">Previous</span>
+              </button>
+
+              <!-- Next Slide Container -->
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide="next">
+                <span aria-hidden="true"><ion-icon name="arrow-forward-outline" class="arrow-forward-outline"></ion-icon></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- End of Image Carousel -->
+
+          <!-- Text -->
+          <!-- <div class="col col-md-6"> -->
+          <div class="row">
+            <div class="project-content">
+              <h1 class="project-heading">Trailhawk</h1>
+              <h2 class="project-subheading">Hiking & State Park Map App</h2>
+              <ul class="tech-list">
+                <li class="list-item">React</li>
+                <li class="list-item">Tailwind CSS</li>
+                <li class="list-item">React-leaflet</li>
+                <li class="list-item">Google Maps API</li>
+              </ul>
+              <p class="project-description">
+                If you're an avid hiker or just looking for a new adventure, Trailhawk is the perfect app for you. Trailhawk lets you discover the best of the U.S. State Parks and National Parks. From casual hiking trails to treks spanning over 2000 miles, Trailhawk has you covered.
+              </p>
+              <div class="project-btns">
+                <!-- OPEN LIVE SITE -->
+                  <a class="click-zone" href="https://trailhawk.netlify.app/" target="_blank"
+                  ><button class="btn-site"><ion-icon name="open-outline" class="project-icon"></ion-icon>View Site</button></a
+                >
+                <!-- OPEN REPO CODE -->
+                <a class="click-zone" href="https://github.com/bartswierz/employee-records" target="_blank"
+                  ><button class="btn-code"><ion-icon name="code-slash-outline" class="project-icon"></ion-icon>View Documentation</button></a
+                >
+                <!-- OPEN MODAL BUTTON -->
+                <button type="button" class="btn-description" data-bs-toggle="modal" data-bs-target="#projectModal7">
+                  <ion-icon name="enter-outline" class="project-icon"></ion-icon>Project Description
+                </button>
+                <!-- MODAL CONTENT -->
+                <div class="modal fade" id="projectModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel">Project Overview</h1>
+                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                      </div>
+                      <div class="modal-body">
+                        <!-- Section #1 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseProjSevenBtnOne"
+                                aria-expanded="true"
+                                aria-controls="collapseProjSevenBtnOne"
+                              >
+                                <span class="accordion-button-text">Project Description</span>
+                              </button>
+                            </h2>
+                            <div id="collapseProjSevenBtnOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                This Trailhawk web application is a map app built using React, Tailwind CSS, React-Leaflet, and Google Maps API. The app allows users to search for hiking trails and state parks in the United States with an autocomplete matching user input by filtering through our current 27 locations across the United States. The app is built with scalability in mind and can easily accomodate more data without further configuration. The app is deployed on Netlify and the code is hosted on GitHub.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Section #2 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseProjSevenBtnTwo"
+                                aria-expanded="true"
+                                aria-controls="collapseProjSevenBtnTwo"
+                              >
+                                <span class="accordion-button-text">Why did I build this project?</span>
+                              </button>
+                            </h2>
+                            <div id="collapseProjSevenBtnTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                I was curious about how to use Leaflet and Google Maps together to create a maps application to better understand what is going on under the hood. This is something I have been wanting to learn for a while and can be very useful to have in a real-world project as maps are used in many different applications. I ended up really enjoying myself and learned a lot reading through the documentation and implementing it into the app. I learn best my being hands on and building projects that interest me. I was suprised to learn that it was very use to setup the application with so much features and functionality right out of the box with leaflet and google maps API. I was able to get the app up and running in a few hours and spent the rest of the time styling the app and adding more features. I plan to continue to add more features to this app.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Section #3 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseProjSevenBtnThree"
+                                aria-expanded="true"
+                                aria-controls="collapseProjSevenBtnThree"
+                              >
+                                <span class="accordion-button-text">Build Difficulties?</span>
+                              </button>
+                            </h2>
+                            <div id="collapseProjSevenBtnThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                During the initial setup developing the application,  we encountered a bit of a roadblock when it came time to integrate Google Maps Layer with React-Leaflet. React-Leaflet provided clear and user-friendly documentation which made it quick and easy to implement, but there wasn't much out there when it came to implmenting Google Maps with it. To solve this issue, we dived deep into the documentation for React-leaflet , original leaflet, and google maps and stackoverflow to find a solution. After spending a bit of time reading through various resources and tinkering within our application, we came across an npm package that made the integration simple. I used the react-leaflet-google-layer package that allow us to pass in a component with our google maps API key as a prop, and placing this within our MapsContainer component to apply the google maps layer. This resolved our issue and allowed us to continue building out our application.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Section #4 -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseProjSevenBtnFour"
+                                aria-expanded="true"
+                                aria-controls="collapseProjSevenBtnFour"
+                              >
+                                <span class="accordion-button-text">Future Features</span>
+                              </button>
+                            </h2>
+                            <div id="collapseProjSevenBtnFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <ul class="features-list">
+                                  <li>
+                                    <ion-icon name="construct-outline" class="features-icon"></ion-icon> Favorite Location - User can save their favorite location 
+                                  </li>
+                                  <li>
+                                    <ion-icon name="construct-outline" class="features-icon"></ion-icon> Suggestion Option Button - User can click a button to get a random suggestion from our available locations 
+                                  </li>
+                                  <li>
+                                    <ion-icon name="construct-outline" class="features-icon"></ion-icon> Ratings
+                                  </li>
+                                  <li>
+                                    <ion-icon name="construct-outline" class="features-icon"></ion-icon> Dark mode / Light mode Toggle - This will also change the map theme
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="modal-close" data-bs-dismiss="modal">
+                          <ion-icon name="exit-outline" class="project-icon"></ion-icon>Close
+                        </button>
+                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END OF MODAL -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF TRAILHAWK MAPS PROJECT -->
+
+      <!-- PROJECT #5 - MERN STACK -->
       <div class="project-section animate-proj-5">
         <div class="container-fluid">
           <!-- Image -->
