@@ -12,6 +12,7 @@ window.onscroll = function () {
   } else {
     // User Scrolled DOWN - 67.25px is current navbar height
     document.getElementById("my-navbar").style.top = "-250px";
+    // TODO - when user scrolls down we want to also CLOSE the navbar IF ITS OPEN
   }
   // Update value for future comparison
   prevScrollPos = currentScrollPos;
